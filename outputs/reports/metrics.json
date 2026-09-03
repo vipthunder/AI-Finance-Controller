@@ -1,0 +1,162 @@
+{
+  "total_records": 179,
+  "total_ground_truth_pairs": 172,
+  "proposed_pairs_count": 172,
+  "true_positives": 172,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "true_negatives": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "raw_candidate_recall": 1.0,
+  "exact_match_coverage": 0.2558139534883721,
+  "fuzzy_resolution_coverage": 0.8313953488372093,
+  "ai_resolution_coverage": 0.14534883720930233,
+  "final_reconciliation_recall": 1.0,
+  "candidate_recall": 1.0,
+  "false_match_rate": 0.0,
+  "match_rate": 0.9832402234636871,
+  "exact_matches_count": 44,
+  "fuzzy_matches_count": 107,
+  "auto_resolution_rate": 0.8435754189944135,
+  "auto_resolution_precision": 1.0,
+  "auto_resolution_recall": 0.8546511627906976,
+  "ai_matches_count": 21,
+  "ai_invocations_count": 144,
+  "ai_accepted_count": 23,
+  "ai_rejected_count": 121,
+  "ai_validation_failed_count": 2,
+  "ai_superseded_count": 0,
+  "ai_failed_count": 0,
+  "ai_committed_count": 21,
+  "ai_provider_mode": "MOCK",
+  "ai_model": "gemini-1.5-flash",
+  "ai_latency_ms": 0.0,
+  "ai_usage_rate": 0.8044692737430168,
+  "ai_acceptance_rate": 0.1597222222222222,
+  "ai_commitment_rate": 0.9130434782608695,
+  "ai_supersession_rate": 0.0,
+  "ai_validation_failure_rate": 0.08695652173913043,
+  "ai_recommendation_precision": 0.9130434782608695,
+  "ai_recommendation_recall": 1.0,
+  "ai_contribution_recall": 0.12209302325581395,
+  "ai_precision": 0.9130434782608695,
+  "ai_recall": 1.0,
+  "automation_rate": 0.9832402234636871,
+  "exceptions_count": 3,
+  "exceptions_by_reason": {
+    "LIKELY_DUPLICATE": 3
+  },
+  "exception_precision": 1.0,
+  "exception_recall": 0.01675977653631285,
+  "total_value": 559076.17,
+  "matched_value": 540410.0699999997,
+  "exception_value": 18666.100000000002,
+  "incorrectly_matched_value": 0.0,
+  "value_reconciliation_rate": 0.9666125994960574,
+  "canonical_transactions": 60,
+  "fully_reconciled_transactions": 60,
+  "partially_reconciled_transactions": 0,
+  "unresolved_transactions": 0,
+  "fully_reconciled_tx_rate": 1.0,
+  "partial_transaction_coverage": 1.0,
+  "total_business_value": 182008.83999999997,
+  "total_canonical_value": 182008.83999999997,
+  "fully_reconciled_value": 182008.83999999997,
+  "partially_reconciled_value": 0.0,
+  "reconciled_business_value": 182008.83999999997,
+  "exception_business_value": 0.0,
+  "unresolved_canonical_value": 0.0,
+  "exception_exposure_value": 18666.100000000002,
+  "auto_resolved_value": 486154.02,
+  "business_value_reconciliation_rate": 1.0,
+  "full_value_reconciliation_rate": 1.0,
+  "financial_value_coverage": 1.0,
+  "ai_eligible_candidates": 144,
+  "ai_eligible_gt_relationships": 21,
+  "duplicate_escape_rate": 0.0,
+  "critical_error_rate": 0.0,
+  "silent_drop_count": 0,
+  "processing_time_ms": 79.79941368103027,
+  "throughput_records_per_sec": 2243.124250454881,
+  "fn_diagnostics": {
+    "FN_CANDIDATE_GENERATION": 0,
+    "FN_LOW_SCORE": 0,
+    "FN_ROUTER_REJECTION": 0,
+    "FN_AI_REJECTION": 0,
+    "FN_AI_FAILURE": 0,
+    "FN_VALIDATION_FAILURE": 0,
+    "FN_SUPERSEDED": 0,
+    "FN_DUPLICATE_CONFLICT": 0,
+    "FN_OTHER": 0
+  },
+  "discrepancy_metrics": {
+    "Payment Processing": {
+      "total_tx": 5,
+      "reconciled_tx": 5,
+      "total_value": 5769.7,
+      "reconciliation_rate": 1.0
+    },
+    "Cloud Infrastructure": {
+      "total_tx": 8,
+      "reconciled_tx": 8,
+      "total_value": 24353.98,
+      "reconciliation_rate": 1.0
+    },
+    "Software": {
+      "total_tx": 21,
+      "reconciled_tx": 21,
+      "total_value": 51939.23999999999,
+      "reconciliation_rate": 1.0
+    },
+    "Consulting": {
+      "total_tx": 2,
+      "reconciled_tx": 2,
+      "total_value": 4163.68,
+      "reconciliation_rate": 1.0
+    },
+    "Legal": {
+      "total_tx": 4,
+      "reconciled_tx": 4,
+      "total_value": 50544.46000000001,
+      "reconciliation_rate": 1.0
+    },
+    "Shipping": {
+      "total_tx": 6,
+      "reconciled_tx": 6,
+      "total_value": 2971.41,
+      "reconciliation_rate": 1.0
+    },
+    "Hardware": {
+      "total_tx": 4,
+      "reconciled_tx": 4,
+      "total_value": 22369.479999999996,
+      "reconciliation_rate": 1.0
+    },
+    "Office": {
+      "total_tx": 4,
+      "reconciled_tx": 4,
+      "total_value": 13907.16,
+      "reconciliation_rate": 1.0
+    },
+    "Telecommunications": {
+      "total_tx": 2,
+      "reconciled_tx": 2,
+      "total_value": 738.85,
+      "reconciliation_rate": 1.0
+    },
+    "HR/Payroll": {
+      "total_tx": 3,
+      "reconciled_tx": 3,
+      "total_value": 5151.07,
+      "reconciliation_rate": 1.0
+    },
+    "Banking": {
+      "total_tx": 1,
+      "reconciled_tx": 1,
+      "total_value": 99.81,
+      "reconciliation_rate": 1.0
+    }
+  }
+}

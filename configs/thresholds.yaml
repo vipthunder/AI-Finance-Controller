@@ -1,0 +1,33 @@
+# LOCKED THRESHOLDS - Centralized configuration source for all components
+router:
+  high_confidence: 0.85
+  mid_band_min: 0.50
+
+ai_verification:
+  acceptance_threshold: 0.75
+  provider: "mock"
+  model: "gemini-1.5-flash"
+  max_retries: 2
+  timeout_seconds: 10.0
+
+validator:
+  max_amount_abs_tolerance: 28.0
+  max_amount_pct_tolerance: 0.05
+  max_date_tolerance_days: 10
+
+candidate_generation:
+  max_date_diff_days: 14
+  max_amount_pct_diff: 0.20
+  max_amount_abs_diff: 60.0
+  enable_reference_blocking: true
+  enable_entity_blocking: true
+  enable_proximity_blocking: true
+
+scoring:
+  weight_name: 0.40
+  weight_amount: 0.40
+  weight_date: 0.20
+
+normalization:
+  strip_corporate_suffixes: true
+  clean_punctuation: true

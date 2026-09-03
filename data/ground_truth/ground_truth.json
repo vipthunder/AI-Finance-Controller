@@ -1,0 +1,1192 @@
+{
+  "transactions": {
+    "GT-0001": {
+      "gt_id": "GT-0001",
+      "date": "2024-05-20",
+      "base_amount": 147.52,
+      "base_currency": "USD",
+      "canonical_counterparty": "Stripe",
+      "category": "Payment Processing",
+      "description": "Synthetic tx #1",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0001"
+        ],
+        "BANK": [
+          "B-0001"
+        ]
+      }
+    },
+    "GT-0002": {
+      "gt_id": "GT-0002",
+      "date": "2024-04-21",
+      "base_amount": 634.09,
+      "base_currency": "USD",
+      "canonical_counterparty": "Google Cloud",
+      "category": "Cloud Infrastructure",
+      "description": "Synthetic tx #2",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0002"
+        ],
+        "BANK": [
+          "B-0002"
+        ]
+      }
+    },
+    "GT-0003": {
+      "gt_id": "GT-0003",
+      "date": "2024-05-22",
+      "base_amount": 2347.63,
+      "base_currency": "USD",
+      "canonical_counterparty": "Datadog",
+      "category": "Software",
+      "description": "Synthetic tx #3",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0003"
+        ],
+        "BANK": [
+          "B-0003"
+        ]
+      }
+    },
+    "GT-0004": {
+      "gt_id": "GT-0004",
+      "date": "2024-06-21",
+      "base_amount": 2355.14,
+      "base_currency": "USD",
+      "canonical_counterparty": "Snowflake",
+      "category": "Software",
+      "description": "Synthetic tx #4",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0004"
+        ],
+        "BANK": [
+          "B-0004"
+        ]
+      }
+    },
+    "GT-0005": {
+      "gt_id": "GT-0005",
+      "date": "2024-01-23",
+      "base_amount": 2425.82,
+      "base_currency": "USD",
+      "canonical_counterparty": "Acme Global Solutions",
+      "category": "Consulting",
+      "description": "Synthetic tx #5",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0005"
+        ],
+        "BANK": [
+          "B-0005"
+        ],
+        "INVOICE": [
+          "I-0005"
+        ]
+      }
+    },
+    "GT-0006": {
+      "gt_id": "GT-0006",
+      "date": "2024-11-17",
+      "base_amount": 3670.61,
+      "base_currency": "USD",
+      "canonical_counterparty": "Microsoft Azure",
+      "category": "Cloud Infrastructure",
+      "description": "Synthetic tx #6",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0006"
+        ],
+        "BANK": [
+          "B-0006"
+        ],
+        "INVOICE": [
+          "I-0006"
+        ]
+      }
+    },
+    "GT-0007": {
+      "gt_id": "GT-0007",
+      "date": "2024-02-10",
+      "base_amount": 3319.21,
+      "base_currency": "USD",
+      "canonical_counterparty": "Datadog",
+      "category": "Software",
+      "description": "Synthetic tx #7",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0007"
+        ],
+        "BANK": [
+          "B-0007"
+        ],
+        "INVOICE": [
+          "I-0007"
+        ]
+      }
+    },
+    "GT-0008": {
+      "gt_id": "GT-0008",
+      "date": "2024-06-30",
+      "base_amount": 8253.08,
+      "base_currency": "USD",
+      "canonical_counterparty": "Latham & Watkins",
+      "category": "Legal",
+      "description": "Synthetic tx #8",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0008"
+        ],
+        "BANK": [
+          "B-0008"
+        ],
+        "INVOICE": [
+          "I-0008"
+        ]
+      }
+    },
+    "GT-0009": {
+      "gt_id": "GT-0009",
+      "date": "2024-03-28",
+      "base_amount": 3967.48,
+      "base_currency": "USD",
+      "canonical_counterparty": "Microsoft Azure",
+      "category": "Cloud Infrastructure",
+      "description": "Synthetic tx #9",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0009"
+        ],
+        "BANK": [
+          "B-0009"
+        ],
+        "INVOICE": [
+          "I-0009"
+        ]
+      }
+    },
+    "GT-0010": {
+      "gt_id": "GT-0010",
+      "date": "2024-06-15",
+      "base_amount": 258.63,
+      "base_currency": "USD",
+      "canonical_counterparty": "FedEx",
+      "category": "Shipping",
+      "description": "Synthetic tx #10",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0010"
+        ],
+        "BANK": [
+          "B-0010"
+        ],
+        "INVOICE": [
+          "I-0010"
+        ]
+      }
+    },
+    "GT-0011": {
+      "gt_id": "GT-0011",
+      "date": "2024-10-17",
+      "base_amount": 1864.04,
+      "base_currency": "USD",
+      "canonical_counterparty": "Snowflake",
+      "category": "Software",
+      "description": "Synthetic tx #11",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0011"
+        ],
+        "BANK": [
+          "B-0011"
+        ],
+        "INVOICE": [
+          "I-0011"
+        ]
+      }
+    },
+    "GT-0012": {
+      "gt_id": "GT-0012",
+      "date": "2024-03-12",
+      "base_amount": 3142.97,
+      "base_currency": "USD",
+      "canonical_counterparty": "Apple Enterprise",
+      "category": "Hardware",
+      "description": "Synthetic tx #12",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0012"
+        ],
+        "BANK": [
+          "B-0012"
+        ],
+        "INVOICE": [
+          "I-0012"
+        ]
+      }
+    },
+    "GT-0013": {
+      "gt_id": "GT-0013",
+      "date": "2024-07-23",
+      "base_amount": 4591.29,
+      "base_currency": "USD",
+      "canonical_counterparty": "WeWork",
+      "category": "Office",
+      "description": "Synthetic tx #13",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0013"
+        ],
+        "BANK": [
+          "B-0013"
+        ],
+        "INVOICE": [
+          "I-0013"
+        ]
+      }
+    },
+    "GT-0014": {
+      "gt_id": "GT-0014",
+      "date": "2024-03-19",
+      "base_amount": 4374.96,
+      "base_currency": "USD",
+      "canonical_counterparty": "Google Cloud",
+      "category": "Cloud Infrastructure",
+      "description": "Synthetic tx #14",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0014"
+        ],
+        "BANK": [
+          "B-0014"
+        ],
+        "INVOICE": [
+          "I-0014"
+        ]
+      }
+    },
+    "GT-0015": {
+      "gt_id": "GT-0015",
+      "date": "2024-10-10",
+      "base_amount": 6232.91,
+      "base_currency": "USD",
+      "canonical_counterparty": "Apple Enterprise",
+      "category": "Hardware",
+      "description": "Synthetic tx #15",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0015"
+        ],
+        "BANK": [
+          "B-0015"
+        ],
+        "INVOICE": [
+          "I-0015"
+        ]
+      }
+    },
+    "GT-0016": {
+      "gt_id": "GT-0016",
+      "date": "2024-06-23",
+      "base_amount": 5727.29,
+      "base_currency": "USD",
+      "canonical_counterparty": "Snowflake",
+      "category": "Software",
+      "description": "Synthetic tx #16",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0016"
+        ],
+        "BANK": [
+          "B-0016"
+        ],
+        "INVOICE": [
+          "I-0016"
+        ]
+      }
+    },
+    "GT-0017": {
+      "gt_id": "GT-0017",
+      "date": "2024-09-16",
+      "base_amount": 633.37,
+      "base_currency": "GBP",
+      "canonical_counterparty": "British Telecom",
+      "category": "Telecommunications",
+      "description": "Synthetic tx #17",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0017"
+        ],
+        "BANK": [
+          "B-0017"
+        ],
+        "INVOICE": [
+          "I-0017"
+        ]
+      }
+    },
+    "GT-0018": {
+      "gt_id": "GT-0018",
+      "date": "2024-03-23",
+      "base_amount": 4243.48,
+      "base_currency": "USD",
+      "canonical_counterparty": "Salesforce",
+      "category": "Software",
+      "description": "Synthetic tx #18",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0018"
+        ],
+        "BANK": [
+          "B-0018"
+        ],
+        "INVOICE": [
+          "I-0018"
+        ]
+      }
+    },
+    "GT-0019": {
+      "gt_id": "GT-0019",
+      "date": "2024-10-17",
+      "base_amount": 1173.78,
+      "base_currency": "USD",
+      "canonical_counterparty": "Datadog",
+      "category": "Software",
+      "description": "Synthetic tx #19",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0019"
+        ],
+        "BANK": [
+          "B-0019"
+        ],
+        "INVOICE": [
+          "I-0019"
+        ]
+      }
+    },
+    "GT-0020": {
+      "gt_id": "GT-0020",
+      "date": "2024-08-31",
+      "base_amount": 2770.35,
+      "base_currency": "USD",
+      "canonical_counterparty": "Salesforce",
+      "category": "Software",
+      "description": "Synthetic tx #20",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0020"
+        ],
+        "BANK": [
+          "B-0020"
+        ],
+        "INVOICE": [
+          "I-0020"
+        ]
+      }
+    },
+    "GT-0021": {
+      "gt_id": "GT-0021",
+      "date": "2024-12-19",
+      "base_amount": 767.5,
+      "base_currency": "USD",
+      "canonical_counterparty": "FedEx",
+      "category": "Shipping",
+      "description": "Synthetic tx #21",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0021"
+        ],
+        "BANK": [
+          "B-0021"
+        ],
+        "INVOICE": [
+          "I-0021"
+        ]
+      }
+    },
+    "GT-0022": {
+      "gt_id": "GT-0022",
+      "date": "2024-09-21",
+      "base_amount": 13762.0,
+      "base_currency": "USD",
+      "canonical_counterparty": "Latham & Watkins",
+      "category": "Legal",
+      "description": "Synthetic tx #22",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0022"
+        ],
+        "BANK": [
+          "B-0022"
+        ],
+        "INVOICE": [
+          "I-0022"
+        ]
+      }
+    },
+    "GT-0023": {
+      "gt_id": "GT-0023",
+      "date": "2024-04-22",
+      "base_amount": 268.61,
+      "base_currency": "USD",
+      "canonical_counterparty": "FedEx",
+      "category": "Shipping",
+      "description": "Synthetic tx #23",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0023"
+        ],
+        "BANK": [
+          "B-0023"
+        ],
+        "INVOICE": [
+          "I-0023"
+        ]
+      }
+    },
+    "GT-0024": {
+      "gt_id": "GT-0024",
+      "date": "2024-05-01",
+      "base_amount": 1283.43,
+      "base_currency": "USD",
+      "canonical_counterparty": "Deel",
+      "category": "HR/Payroll",
+      "description": "Synthetic tx #24",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0024"
+        ],
+        "BANK": [
+          "B-0024"
+        ],
+        "INVOICE": [
+          "I-0024"
+        ]
+      }
+    },
+    "GT-0025": {
+      "gt_id": "GT-0025",
+      "date": "2024-08-30",
+      "base_amount": 99.81,
+      "base_currency": "USD",
+      "canonical_counterparty": "Silicon Valley Bank",
+      "category": "Banking",
+      "description": "Synthetic tx #25",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0025"
+        ],
+        "BANK": [
+          "B-0025"
+        ],
+        "INVOICE": [
+          "I-0025"
+        ]
+      }
+    },
+    "GT-0026": {
+      "gt_id": "GT-0026",
+      "date": "2024-01-28",
+      "base_amount": 2868.1,
+      "base_currency": "USD",
+      "canonical_counterparty": "WeWork",
+      "category": "Office",
+      "description": "Synthetic tx #26",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0026"
+        ],
+        "BANK": [
+          "B-0026"
+        ],
+        "INVOICE": [
+          "I-0026"
+        ]
+      }
+    },
+    "GT-0027": {
+      "gt_id": "GT-0027",
+      "date": "2024-10-01",
+      "base_amount": 1574.77,
+      "base_currency": "USD",
+      "canonical_counterparty": "Datadog",
+      "category": "Software",
+      "description": "Synthetic tx #27",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0027"
+        ],
+        "BANK": [
+          "B-0027"
+        ],
+        "INVOICE": [
+          "I-0027"
+        ]
+      }
+    },
+    "GT-0028": {
+      "gt_id": "GT-0028",
+      "date": "2024-10-08",
+      "base_amount": 8464.18,
+      "base_currency": "USD",
+      "canonical_counterparty": "Apple Enterprise",
+      "category": "Hardware",
+      "description": "Synthetic tx #28",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0028"
+        ],
+        "BANK": [
+          "B-0028"
+        ],
+        "INVOICE": [
+          "I-0028"
+        ]
+      }
+    },
+    "GT-0029": {
+      "gt_id": "GT-0029",
+      "date": "2024-09-05",
+      "base_amount": 1498.93,
+      "base_currency": "USD",
+      "canonical_counterparty": "Datadog",
+      "category": "Software",
+      "description": "Synthetic tx #29",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0029"
+        ],
+        "BANK": [
+          "B-0029"
+        ],
+        "INVOICE": [
+          "I-0029"
+        ]
+      }
+    },
+    "GT-0030": {
+      "gt_id": "GT-0030",
+      "date": "2024-08-20",
+      "base_amount": 6595.85,
+      "base_currency": "USD",
+      "canonical_counterparty": "Snowflake",
+      "category": "Software",
+      "description": "Synthetic tx #30",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0030"
+        ],
+        "BANK": [
+          "B-0030"
+        ],
+        "INVOICE": [
+          "I-0030"
+        ]
+      }
+    },
+    "GT-0031": {
+      "gt_id": "GT-0031",
+      "date": "2024-05-31",
+      "base_amount": 4857.56,
+      "base_currency": "EUR",
+      "canonical_counterparty": "SAP",
+      "category": "Software",
+      "description": "Synthetic tx #31",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0031"
+        ],
+        "BANK": [
+          "B-0031"
+        ],
+        "INVOICE": [
+          "I-0031"
+        ]
+      }
+    },
+    "GT-0032": {
+      "gt_id": "GT-0032",
+      "date": "2024-09-01",
+      "base_amount": 725.64,
+      "base_currency": "USD",
+      "canonical_counterparty": "Google Cloud",
+      "category": "Cloud Infrastructure",
+      "description": "Synthetic tx #32",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0032"
+        ],
+        "BANK": [
+          "B-0032"
+        ],
+        "INVOICE": [
+          "I-0032"
+        ]
+      }
+    },
+    "GT-0033": {
+      "gt_id": "GT-0033",
+      "date": "2024-04-30",
+      "base_amount": 1737.86,
+      "base_currency": "USD",
+      "canonical_counterparty": "Acme Global Solutions",
+      "category": "Consulting",
+      "description": "Synthetic tx #33",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0033"
+        ],
+        "BANK": [
+          "B-0033"
+        ],
+        "INVOICE": [
+          "I-0033"
+        ]
+      }
+    },
+    "GT-0034": {
+      "gt_id": "GT-0034",
+      "date": "2024-08-02",
+      "base_amount": 3287.22,
+      "base_currency": "USD",
+      "canonical_counterparty": "Google Cloud",
+      "category": "Cloud Infrastructure",
+      "description": "Synthetic tx #34",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0034"
+        ],
+        "BANK": [
+          "B-0034"
+        ],
+        "INVOICE": [
+          "I-0034"
+        ]
+      }
+    },
+    "GT-0035": {
+      "gt_id": "GT-0035",
+      "date": "2024-06-09",
+      "base_amount": 1773.4,
+      "base_currency": "USD",
+      "canonical_counterparty": "Atlassian",
+      "category": "Software",
+      "description": "Synthetic tx #35",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0035"
+        ],
+        "BANK": [
+          "B-0035"
+        ],
+        "INVOICE": [
+          "I-0035"
+        ]
+      }
+    },
+    "GT-0036": {
+      "gt_id": "GT-0036",
+      "date": "2024-02-07",
+      "base_amount": 4529.42,
+      "base_currency": "USD",
+      "canonical_counterparty": "Apple Enterprise",
+      "category": "Hardware",
+      "description": "Synthetic tx #36",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0036"
+        ],
+        "BANK": [
+          "B-0036"
+        ],
+        "INVOICE": [
+          "I-0036"
+        ]
+      }
+    },
+    "GT-0037": {
+      "gt_id": "GT-0037",
+      "date": "2024-09-16",
+      "base_amount": 3595.7,
+      "base_currency": "USD",
+      "canonical_counterparty": "Microsoft Azure",
+      "category": "Cloud Infrastructure",
+      "description": "Synthetic tx #37",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0037"
+        ],
+        "BANK": [
+          "B-0037"
+        ],
+        "INVOICE": [
+          "I-0037"
+        ]
+      }
+    },
+    "GT-0038": {
+      "gt_id": "GT-0038",
+      "date": "2024-08-12",
+      "base_amount": 10699.75,
+      "base_currency": "USD",
+      "canonical_counterparty": "Latham & Watkins",
+      "category": "Legal",
+      "description": "Synthetic tx #38",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0038"
+        ],
+        "BANK": [
+          "B-0038"
+        ],
+        "INVOICE": [
+          "I-0038"
+        ]
+      }
+    },
+    "GT-0039": {
+      "gt_id": "GT-0039",
+      "date": "2024-10-10",
+      "base_amount": 105.48,
+      "base_currency": "GBP",
+      "canonical_counterparty": "British Telecom",
+      "category": "Telecommunications",
+      "description": "Synthetic tx #39",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0039"
+        ],
+        "BANK": [
+          "B-0039"
+        ],
+        "INVOICE": [
+          "I-0039"
+        ]
+      }
+    },
+    "GT-0040": {
+      "gt_id": "GT-0040",
+      "date": "2024-10-10",
+      "base_amount": 1790.45,
+      "base_currency": "USD",
+      "canonical_counterparty": "Stripe",
+      "category": "Payment Processing",
+      "description": "Synthetic tx #40",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0040"
+        ],
+        "BANK": [
+          "B-0040"
+        ],
+        "INVOICE": [
+          "I-0040"
+        ]
+      }
+    },
+    "GT-0041": {
+      "gt_id": "GT-0041",
+      "date": "2024-05-15",
+      "base_amount": 1812.49,
+      "base_currency": "USD",
+      "canonical_counterparty": "Atlassian",
+      "category": "Software",
+      "description": "Synthetic tx #41",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0041"
+        ],
+        "BANK": [
+          "B-0041"
+        ],
+        "INVOICE": [
+          "I-0041"
+        ]
+      }
+    },
+    "GT-0042": {
+      "gt_id": "GT-0042",
+      "date": "2024-05-21",
+      "base_amount": 4098.28,
+      "base_currency": "USD",
+      "canonical_counterparty": "Microsoft Azure",
+      "category": "Cloud Infrastructure",
+      "description": "Synthetic tx #42",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0042"
+        ],
+        "BANK": [
+          "B-0042"
+        ],
+        "INVOICE": [
+          "I-0042"
+        ]
+      }
+    },
+    "GT-0043": {
+      "gt_id": "GT-0043",
+      "date": "2024-10-09",
+      "base_amount": 1163.6,
+      "base_currency": "USD",
+      "canonical_counterparty": "Slack",
+      "category": "Software",
+      "description": "Synthetic tx #43",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0043"
+        ],
+        "BANK": [
+          "B-0043"
+        ],
+        "INVOICE": [
+          "I-0043"
+        ]
+      }
+    },
+    "GT-0044": {
+      "gt_id": "GT-0044",
+      "date": "2024-07-08",
+      "base_amount": 84.23,
+      "base_currency": "USD",
+      "canonical_counterparty": "FedEx",
+      "category": "Shipping",
+      "description": "Synthetic tx #44",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0044"
+        ],
+        "BANK": [
+          "B-0044"
+        ],
+        "INVOICE": [
+          "I-0044"
+        ]
+      }
+    },
+    "GT-0045": {
+      "gt_id": "GT-0045",
+      "date": "2024-01-21",
+      "base_amount": 214.09,
+      "base_currency": "USD",
+      "canonical_counterparty": "Gusto Payroll",
+      "category": "HR/Payroll",
+      "description": "Synthetic tx #45",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0045"
+        ],
+        "BANK": [
+          "B-0045"
+        ],
+        "INVOICE": [
+          "I-0045"
+        ]
+      }
+    },
+    "GT-0046": {
+      "gt_id": "GT-0046",
+      "date": "2024-07-27",
+      "base_amount": 889.93,
+      "base_currency": "USD",
+      "canonical_counterparty": "FedEx",
+      "category": "Shipping",
+      "description": "Synthetic tx #46",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0046"
+        ],
+        "BANK": [
+          "B-0046"
+        ],
+        "INVOICE": [
+          "I-0046"
+        ]
+      }
+    },
+    "GT-0047": {
+      "gt_id": "GT-0047",
+      "date": "2024-03-31",
+      "base_amount": 1469.07,
+      "base_currency": "USD",
+      "canonical_counterparty": "Slack",
+      "category": "Software",
+      "description": "Synthetic tx #47",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0047"
+        ],
+        "BANK": [
+          "B-0047"
+        ],
+        "INVOICE": [
+          "I-0047"
+        ]
+      }
+    },
+    "GT-0048": {
+      "gt_id": "GT-0048",
+      "date": "2024-12-25",
+      "base_amount": 1800.42,
+      "base_currency": "USD",
+      "canonical_counterparty": "Datadog",
+      "category": "Software",
+      "description": "Synthetic tx #48",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0048"
+        ],
+        "BANK": [
+          "B-0048"
+        ],
+        "INVOICE": [
+          "I-0048"
+        ]
+      }
+    },
+    "GT-0049": {
+      "gt_id": "GT-0049",
+      "date": "2024-08-23",
+      "base_amount": 2096.49,
+      "base_currency": "USD",
+      "canonical_counterparty": "Atlassian",
+      "category": "Software",
+      "description": "Synthetic tx #49",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0049"
+        ],
+        "BANK": [
+          "B-0049"
+        ],
+        "INVOICE": [
+          "I-0049"
+        ]
+      }
+    },
+    "GT-0050": {
+      "gt_id": "GT-0050",
+      "date": "2024-04-08",
+      "base_amount": 1070.99,
+      "base_currency": "USD",
+      "canonical_counterparty": "Datadog",
+      "category": "Software",
+      "description": "Synthetic tx #50",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0050"
+        ],
+        "BANK": [
+          "B-0050"
+        ],
+        "INVOICE": [
+          "I-0050"
+        ]
+      }
+    },
+    "GT-0051": {
+      "gt_id": "GT-0051",
+      "date": "2024-07-23",
+      "base_amount": 17829.63,
+      "base_currency": "USD",
+      "canonical_counterparty": "Latham & Watkins",
+      "category": "Legal",
+      "description": "Synthetic tx #51",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0051"
+        ],
+        "BANK": [
+          "B-0051"
+        ],
+        "INVOICE": [
+          "I-0051"
+        ]
+      }
+    },
+    "GT-0052": {
+      "gt_id": "GT-0052",
+      "date": "2024-05-13",
+      "base_amount": 1766.37,
+      "base_currency": "USD",
+      "canonical_counterparty": "Stripe",
+      "category": "Payment Processing",
+      "description": "Synthetic tx #52",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0052"
+        ],
+        "BANK": [
+          "B-0052"
+        ],
+        "INVOICE": [
+          "I-0052"
+        ]
+      }
+    },
+    "GT-0053": {
+      "gt_id": "GT-0053",
+      "date": "2024-06-25",
+      "base_amount": 1233.49,
+      "base_currency": "USD",
+      "canonical_counterparty": "Stripe",
+      "category": "Payment Processing",
+      "description": "Synthetic tx #53",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0053"
+        ],
+        "BANK": [
+          "B-0053"
+        ],
+        "INVOICE": [
+          "I-0053"
+        ]
+      }
+    },
+    "GT-0054": {
+      "gt_id": "GT-0054",
+      "date": "2024-10-22",
+      "base_amount": 831.87,
+      "base_currency": "USD",
+      "canonical_counterparty": "Stripe",
+      "category": "Payment Processing",
+      "description": "Synthetic tx #54",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0054"
+        ],
+        "BANK": [
+          "B-0054"
+        ],
+        "INVOICE": [
+          "I-0054"
+        ]
+      }
+    },
+    "GT-0055": {
+      "gt_id": "GT-0055",
+      "date": "2024-12-09",
+      "base_amount": 702.51,
+      "base_currency": "USD",
+      "canonical_counterparty": "FedEx",
+      "category": "Shipping",
+      "description": "Synthetic tx #55",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0055"
+        ],
+        "BANK": [
+          "B-0055"
+        ],
+        "INVOICE": [
+          "I-0055"
+        ]
+      }
+    },
+    "GT-0056": {
+      "gt_id": "GT-0056",
+      "date": "2024-03-04",
+      "base_amount": 3653.55,
+      "base_currency": "USD",
+      "canonical_counterparty": "Deel",
+      "category": "HR/Payroll",
+      "description": "Synthetic tx #56",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0056"
+        ],
+        "BANK": [
+          "B-0056"
+        ],
+        "INVOICE": [
+          "I-0056"
+        ]
+      }
+    },
+    "GT-0057": {
+      "gt_id": "GT-0057",
+      "date": "2024-12-22",
+      "base_amount": 2304.73,
+      "base_currency": "USD",
+      "canonical_counterparty": "WeWork",
+      "category": "Office",
+      "description": "Synthetic tx #57",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0057"
+        ],
+        "BANK": [
+          "B-0057"
+        ],
+        "INVOICE": [
+          "I-0057"
+        ]
+      }
+    },
+    "GT-0058": {
+      "gt_id": "GT-0058",
+      "date": "2024-06-03",
+      "base_amount": 1000.17,
+      "base_currency": "USD",
+      "canonical_counterparty": "Slack",
+      "category": "Software",
+      "description": "Synthetic tx #58",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0058"
+        ],
+        "BANK": [
+          "B-0058"
+        ],
+        "INVOICE": [
+          "I-0058"
+        ]
+      }
+    },
+    "GT-0059": {
+      "gt_id": "GT-0059",
+      "date": "2024-11-06",
+      "base_amount": 4143.04,
+      "base_currency": "USD",
+      "canonical_counterparty": "WeWork",
+      "category": "Office",
+      "description": "Synthetic tx #59",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0059"
+        ],
+        "BANK": [
+          "B-0059"
+        ],
+        "INVOICE": [
+          "I-0059"
+        ]
+      }
+    },
+    "GT-0060": {
+      "gt_id": "GT-0060",
+      "date": "2024-03-27",
+      "base_amount": 1424.58,
+      "base_currency": "USD",
+      "canonical_counterparty": "Atlassian",
+      "category": "Software",
+      "description": "Synthetic tx #60",
+      "source_record_ids": {
+        "LEDGER": [
+          "L-0060"
+        ],
+        "BANK": [
+          "B-0060"
+        ],
+        "INVOICE": [
+          "I-0060"
+        ]
+      }
+    }
+  }
+}

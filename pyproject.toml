@@ -1,0 +1,20 @@
+[project]
+name = "ai-finance-controller"
+version = "1.0.0"
+description = "Multi-source financial reconciliation engine for Track 04: AI Finance Controller"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0",
+    "rapidfuzz>=3.0",
+    "python-dateutil",
+    "pyyaml",
+    "rich>=13.0",
+    "streamlit>=1.30",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"

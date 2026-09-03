@@ -1,0 +1,16 @@
+project:
+  name: AI Finance Controller
+  version: 1.0.0
+  description: Multi-source financial reconciliation engine
+
+data_generation:
+  seed: 42
+  num_transactions: 60
+  missing_rate: 0.08
+  duplicate_rate: 0.05
+
+normalization:
+  date_format: ISO8601
+  currency_standard: ISO4217
+  strip_corporate_suffixes: true
+

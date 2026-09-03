@@ -1,0 +1,5844 @@
+[
+  {
+    "record_id": "LEDGER:L-0001",
+    "status": "RESOLVED",
+    "stage_resolved": "EXACT",
+    "matched_with_ids": [
+      "BANK:B-0001"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 147.52,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0001",
+    "status": "RESOLVED",
+    "stage_resolved": "EXACT",
+    "matched_with_ids": [
+      "LEDGER:L-0001"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 147.52,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0002",
+    "status": "RESOLVED",
+    "stage_resolved": "EXACT",
+    "matched_with_ids": [
+      "BANK:B-0002"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 634.09,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0002",
+    "status": "RESOLVED",
+    "stage_resolved": "EXACT",
+    "matched_with_ids": [
+      "LEDGER:L-0002"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 634.09,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0003",
+    "status": "RESOLVED",
+    "stage_resolved": "EXACT",
+    "matched_with_ids": [
+      "BANK:B-0003"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2347.63,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0003",
+    "status": "RESOLVED",
+    "stage_resolved": "EXACT",
+    "matched_with_ids": [
+      "LEDGER:L-0003"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2347.63,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0004",
+    "status": "RESOLVED",
+    "stage_resolved": "EXACT",
+    "matched_with_ids": [
+      "BANK:B-0004"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2355.14,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0004",
+    "status": "RESOLVED",
+    "stage_resolved": "EXACT",
+    "matched_with_ids": [
+      "LEDGER:L-0004"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2355.14,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0005",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0005",
+      "BANK:B-0005"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2425.82,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0005",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0005",
+      "BANK:B-0005"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2425.82,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0006",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "INVOICE:I-0006",
+      "BANK:B-0006"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3670.61,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0006",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0006",
+      "BANK:B-0006"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3670.61,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0007",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0007",
+      "BANK:B-0007"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3319.21,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0007",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0007",
+      "BANK:B-0007"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3319.21,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0008",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0008",
+      "INVOICE:I-0008"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 8253.08,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0008",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0008",
+      "INVOICE:I-0008"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 8253.08,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0012",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "INVOICE:I-0012",
+      "BANK:B-0012"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3142.97,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0012",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0012",
+      "BANK:B-0012"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3142.97,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0015",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0015",
+      "BANK:B-0015"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 6232.91,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0015",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0015",
+      "BANK:B-0015"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 6232.91,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0016",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0016",
+      "BANK:B-0016"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 5727.29,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0016",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0016",
+      "BANK:B-0016"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 5727.29,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0019",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0019",
+      "BANK:B-0019"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1173.78,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0019",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0019",
+      "BANK:B-0019"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1173.78,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0020",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0020",
+      "BANK:B-0020"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2770.35,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0020",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0020",
+      "BANK:B-0020"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2770.35,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0021",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0021",
+      "BANK:B-0021"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 767.5,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0021",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0021",
+      "BANK:B-0021"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 767.5,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0024",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "INVOICE:I-0024",
+      "BANK:B-0024"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1283.43,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0024",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0024",
+      "BANK:B-0024"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1283.43,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0028",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0028",
+      "BANK:B-0028"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 8464.18,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0028",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0028",
+      "BANK:B-0028"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 8464.18,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0030",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0030",
+      "BANK:B-0030"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 6595.85,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0030",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0030",
+      "BANK:B-0030"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 6595.85,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0031",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0031",
+      "BANK:B-0031"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 4857.56,
+      "currency": "EUR"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0031",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0031",
+      "BANK:B-0031"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 4857.56,
+      "currency": "EUR"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0033",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0033",
+      "INVOICE:I-0033"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1737.86,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0033",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0033",
+      "INVOICE:I-0033"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1737.86,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0034",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0034",
+      "BANK:B-0034"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3287.22,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0034",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0034",
+      "BANK:B-0034"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3287.22,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0035",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0035",
+      "INVOICE:I-0035"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1773.4,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0035",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0035",
+      "INVOICE:I-0035"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1773.4,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0036",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0036",
+      "INVOICE:I-0036"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 4529.42,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0036",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0036",
+      "INVOICE:I-0036"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 4529.42,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0037",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0037",
+      "INVOICE:I-0037"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3595.7,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0037",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0037",
+      "INVOICE:I-0037"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3595.7,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0038",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0038",
+      "BANK:B-0038"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 10699.75,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0038",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0038",
+      "BANK:B-0038"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 10699.75,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0039",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0039",
+      "INVOICE:I-0039"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 105.48,
+      "currency": "GBP"
+    }
+  },
+  {
+    "record_id": "BANK:B-0039",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0039",
+      "INVOICE:I-0039"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 105.48,
+      "currency": "GBP"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0040",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0040",
+      "INVOICE:I-0040"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1790.45,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0040",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0040",
+      "INVOICE:I-0040"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1790.45,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0041",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0041",
+      "BANK:B-0041"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1812.49,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0041",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0041",
+      "BANK:B-0041"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1812.49,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0042",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0042",
+      "INVOICE:I-0042"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 4098.28,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0042",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0042",
+      "INVOICE:I-0042"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 4098.28,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0044",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0044",
+      "BANK:B-0044"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 84.23,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0044",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0044",
+      "BANK:B-0044"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 84.23,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0045",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0045",
+      "INVOICE:I-0045"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 214.09,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0045",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0045",
+      "INVOICE:I-0045"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 214.09,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0046",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0046",
+      "BANK:B-0046"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 889.93,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0046",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0046",
+      "BANK:B-0046"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 889.93,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0047",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0047",
+      "INVOICE:I-0047"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1469.07,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0047",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0047",
+      "INVOICE:I-0047"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1469.07,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0048",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0048",
+      "INVOICE:I-0048"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1800.42,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0048",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0048",
+      "INVOICE:I-0048"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1800.42,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0049",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0049",
+      "INVOICE:I-0049"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2096.49,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0049",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0049",
+      "INVOICE:I-0049"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2096.49,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0050",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0050",
+      "INVOICE:I-0050"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1070.99,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0050",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0050",
+      "INVOICE:I-0050"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1070.99,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0051",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0051",
+      "BANK:B-0051"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 17829.63,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0051",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0051",
+      "BANK:B-0051"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 17829.63,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0052",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0052",
+      "INVOICE:I-0052"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1766.37,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0052",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0052",
+      "INVOICE:I-0052"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1766.37,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0053",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0053",
+      "BANK:B-0053"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1233.49,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0053",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0053",
+      "BANK:B-0053"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1233.49,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0054",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0054",
+      "INVOICE:I-0054"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 831.87,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0054",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0054",
+      "INVOICE:I-0054"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 831.87,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0055",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "BANK:B-0055",
+      "INVOICE:I-0055"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 702.51,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0055",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0055",
+      "INVOICE:I-0055"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 702.51,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0056",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0056",
+      "BANK:B-0056"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3653.55,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0056",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0056",
+      "BANK:B-0056"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 3653.55,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0057",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0057",
+      "INVOICE:I-0057"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2304.73,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0057",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0057",
+      "INVOICE:I-0057"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 2304.73,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0058",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0058",
+      "INVOICE:I-0058"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1000.17,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0058",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0058",
+      "INVOICE:I-0058"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 1000.17,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0059",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0059",
+      "BANK:B-0059"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 4143.04,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0059",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0059",
+      "BANK:B-0059"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "EXACT",
+      "amount": 4143.04,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0008",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0008",
+      "BANK:B-0008"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 8253.08,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0036",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0036",
+      "BANK:B-0036"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 4529.42,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0039",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0039",
+      "BANK:B-0039"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 105.48,
+      "currency": "GBP"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0048",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0048",
+      "BANK:B-0048"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1800.42,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0049",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0049",
+      "BANK:B-0049"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 2096.49,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0050",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0050",
+      "BANK:B-0050"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1070.99,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0052",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0052",
+      "BANK:B-0052"
+    ],
+    "confidence": 1.0,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 1.0
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1766.37,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0031",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0031",
+      "INVOICE:I-0031"
+    ],
+    "confidence": 0.9985852979685275,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $17.18 (0.35%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 17.18,
+        "amount_pct_diff": 0.0035,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9985852979685275
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 4840.38,
+      "currency": "EUR"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0027",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0027",
+      "INVOICE:I-0027"
+    ],
+    "confidence": 0.9950494357906234,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $19.49 (1.24%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 19.49,
+        "amount_pct_diff": 0.0124,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9950494357906234
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1574.77,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0027",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0027",
+      "INVOICE:I-0027"
+    ],
+    "confidence": 0.9950494357906234,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $19.49 (1.24%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 19.49,
+        "amount_pct_diff": 0.0124,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9950494357906234
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1555.28,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0029",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "BANK:B-0029",
+      "INVOICE:I-0029"
+    ],
+    "confidence": 0.9947135623411367,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $19.81 (1.32%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 19.81,
+        "amount_pct_diff": 0.0132,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9947135623411367
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1498.93,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0029",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0029",
+      "INVOICE:I-0029"
+    ],
+    "confidence": 0.9947135623411367,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $19.81 (1.32%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 19.81,
+        "amount_pct_diff": 0.0132,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9947135623411367
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1479.12,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0010",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "INVOICE:I-0010",
+      "BANK:B-0010"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 258.63,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0010",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0010",
+      "BANK:B-0010"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 258.63,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0013",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0013",
+      "BANK:B-0013"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 4591.29,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0013",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0013",
+      "BANK:B-0013"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 4591.29,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0016",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0016",
+      "INVOICE:I-0016"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 5727.29,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0019",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0019",
+      "INVOICE:I-0019"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1173.78,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0022",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0022",
+      "BANK:B-0022"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 13762.0,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0022",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0022",
+      "BANK:B-0022"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 13762.0,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0023",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "BANK:B-0023",
+      "INVOICE:I-0023"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 268.61,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0023",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0023",
+      "INVOICE:I-0023"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 268.61,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0035",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0035",
+      "BANK:B-0035"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1773.4,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0042",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0042",
+      "BANK:B-0042"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 4098.28,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0045",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0045",
+      "BANK:B-0045"
+    ],
+    "confidence": 0.9857142857142858,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9857142857142858
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 214.09,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0009",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "INVOICE:I-0009",
+      "BANK:B-0009"
+    ],
+    "confidence": 0.9714285714285715,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9714285714285715
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 3967.48,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0009",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0009",
+      "BANK:B-0009"
+    ],
+    "confidence": 0.9714285714285715,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9714285714285715
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 3967.48,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0011",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0011",
+      "BANK:B-0011"
+    ],
+    "confidence": 0.9714285714285715,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9714285714285715
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1864.04,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0011",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0011",
+      "BANK:B-0011"
+    ],
+    "confidence": 0.9714285714285715,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9714285714285715
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1864.04,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0020",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0020",
+      "INVOICE:I-0020"
+    ],
+    "confidence": 0.9714285714285715,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9714285714285715
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 2770.35,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0026",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0026",
+      "BANK:B-0026"
+    ],
+    "confidence": 0.9714285714285715,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9714285714285715
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 2868.1,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0026",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0026",
+      "BANK:B-0026"
+    ],
+    "confidence": 0.9714285714285715,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9714285714285715
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 2868.1,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0027",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0027",
+      "BANK:B-0027"
+    ],
+    "confidence": 0.9714285714285715,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9714285714285715
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1574.77,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0037",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0037",
+      "BANK:B-0037"
+    ],
+    "confidence": 0.9714285714285715,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9714285714285715
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 3595.7,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0017",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0017",
+      "BANK:B-0017"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 633.37,
+      "currency": "GBP"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0017",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0017",
+      "BANK:B-0017"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 633.37,
+      "currency": "GBP"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0025",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0025",
+      "BANK:B-0025"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 99.81,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0025",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0025",
+      "BANK:B-0025"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 99.81,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0032",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0032",
+      "BANK:B-0032"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 725.64,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0032",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0032",
+      "BANK:B-0032"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 725.64,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0033",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0033",
+      "BANK:B-0033"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1737.86,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0040",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0040",
+      "BANK:B-0040"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1790.45,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0047",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0047",
+      "BANK:B-0047"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1469.07,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0054",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0054",
+      "BANK:B-0054"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 831.87,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0060",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0060",
+      "BANK:B-0060"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1424.58,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0060",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0060",
+      "BANK:B-0060"
+    ],
+    "confidence": 0.9571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1424.58,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0038",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0038",
+      "INVOICE:I-0038"
+    ],
+    "confidence": 0.9555555555555555,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9555555555555555
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 10699.75,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0051",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0051",
+      "INVOICE:I-0051"
+    ],
+    "confidence": 0.9555555555555555,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9555555555555555
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 17829.63,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0028",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0028",
+      "INVOICE:I-0028"
+    ],
+    "confidence": 0.9548003731279606,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $15.98 (0.19%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 15.98,
+        "amount_pct_diff": 0.0019,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9548003731279606
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 8448.2,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0034",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0034",
+      "INVOICE:I-0034"
+    ],
+    "confidence": 0.9428571428571428,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9428571428571428
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 3287.22,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0022",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0022",
+      "INVOICE:I-0022"
+    ],
+    "confidence": 0.942857142857143,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 4 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 4
+      }
+    },
+    "raw_scores": {
+      "composite": 0.942857142857143
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 13762.0,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0025",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0025",
+      "INVOICE:I-0025"
+    ],
+    "confidence": 0.942857142857143,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 4 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 4
+      }
+    },
+    "raw_scores": {
+      "composite": 0.942857142857143
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 99.81,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0015",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0015",
+      "INVOICE:I-0015"
+    ],
+    "confidence": 0.9412698412698413,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9412698412698413
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 6232.91,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0017",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0017",
+      "INVOICE:I-0017"
+    ],
+    "confidence": 0.938655462184874,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.938655462184874
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 633.37,
+      "currency": "GBP"
+    }
+  },
+  {
+    "record_id": "BANK:B-0032",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0032",
+      "INVOICE:I-0032"
+    ],
+    "confidence": 0.931815855166277,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $20.03 (2.76%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 20.03,
+        "amount_pct_diff": 0.0276,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.931815855166277
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 705.61,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0011",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0011",
+      "INVOICE:I-0011"
+    ],
+    "confidence": 0.9272727272727272,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9272727272727272
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1864.04,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0041",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0041",
+      "INVOICE:I-0041"
+    ],
+    "confidence": 0.9272727272727272,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9272727272727272
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1812.49,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0060",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0060",
+      "INVOICE:I-0060"
+    ],
+    "confidence": 0.9272727272727272,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9272727272727272
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1424.58,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0030",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0030",
+      "INVOICE:I-0030"
+    ],
+    "confidence": 0.9261902284287571,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $17.85 (0.27%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 17.85,
+        "amount_pct_diff": 0.0027,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9261902284287571
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 6578.0,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0006",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0006",
+      "INVOICE:I-0006"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8181818181818181
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 3670.61,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0055",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0055",
+      "BANK:B-0055"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8105263157894738
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 702.51,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0009",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0009",
+      "INVOICE:I-0009"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8057142857142858
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 3967.48,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0012",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0012",
+      "INVOICE:I-0012"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.792
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 3142.97,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0043",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0043",
+      "BANK:B-0043"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.7739130434782608
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 1163.6,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0043",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0043",
+      "BANK:B-0043"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.7739130434782608
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 1163.6,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0018",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0018",
+      "BANK:B-0018"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.7714285714285716
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 4243.48,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0018",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0018",
+      "BANK:B-0018"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.7714285714285716
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 4243.48,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0010",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0010",
+      "INVOICE:I-0010"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.76
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 258.63,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0023",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0023",
+      "BANK:B-0023"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.76
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 268.61,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0043",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0043",
+      "LEDGER:L-0043"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.7481481481481482
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 1163.6,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "LEDGER:L-0014",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0014",
+      "BANK:B-0014"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.6533333333333333
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 4374.96,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0014",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0014",
+      "BANK:B-0014"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.6533333333333333
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 4374.96,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0013",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0013",
+      "LEDGER:L-0013"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8383458646616542
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 4591.29,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0018",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0018",
+      "LEDGER:L-0018"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 1 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 1
+      }
+    },
+    "raw_scores": {
+      "composite": 0.7190476190476192
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 4243.48,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0014",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "INVOICE:I-0014",
+      "LEDGER:L-0014"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.6556390977443609
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 4374.96,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0024",
+    "status": "RESOLVED",
+    "stage_resolved": "AI_VERIFIED",
+    "matched_with_ids": [
+      "LEDGER:L-0024",
+      "INVOICE:I-0024"
+    ],
+    "confidence": 0.92,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 3 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 3
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8238095238095239
+    },
+    "metadata": {
+      "matched_stage": "AI_VERIFIED",
+      "amount": 1283.43,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0005",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0005",
+      "INVOICE:I-0005"
+    ],
+    "confidence": 0.9111111111111112,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9111111111111112
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 2425.82,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0029",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0029",
+      "BANK:B-0029"
+    ],
+    "confidence": 0.9111111111111112,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9111111111111112
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1498.93,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0053",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0053",
+      "INVOICE:I-0053"
+    ],
+    "confidence": 0.9000000000000001,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9000000000000001
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1233.49,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0059",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0059",
+      "INVOICE:I-0059"
+    ],
+    "confidence": 0.9000000000000001,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.9000000000000001
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 4143.04,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0026",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0026",
+      "INVOICE:I-0026"
+    ],
+    "confidence": 0.8969694222656115,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $21.73 (0.76%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 21.73,
+        "amount_pct_diff": 0.0076,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8969694222656115
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 2846.37,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0044",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0044",
+      "INVOICE:I-0044"
+    ],
+    "confidence": 0.8857142857142857,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8857142857142857
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 84.23,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0046",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0046",
+      "INVOICE:I-0046"
+    ],
+    "confidence": 0.8857142857142857,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8857142857142857
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 889.93,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0057",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0057",
+      "BANK:B-0057"
+    ],
+    "confidence": 0.8823529411764706,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8823529411764706
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 2304.73,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0056",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0056",
+      "INVOICE:I-0056"
+    ],
+    "confidence": 0.8666666666666667,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8666666666666667
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 3653.55,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "INVOICE:I-0058",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0058",
+      "BANK:B-0058"
+    ],
+    "confidence": 0.8666666666666667,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8666666666666667
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 1000.17,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0021",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0021",
+      "INVOICE:I-0021"
+    ],
+    "confidence": 0.8571428571428572,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 2 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 2
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8571428571428572
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 767.5,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0007",
+    "status": "RESOLVED",
+    "stage_resolved": "FUZZY_DIRECT",
+    "matched_with_ids": [
+      "LEDGER:L-0007",
+      "INVOICE:I-0007"
+    ],
+    "confidence": 0.8545454545454545,
+    "rationale": "Deterministic and threshold rules passed",
+    "exception_reason": null,
+    "validation_result": {
+      "is_valid": true,
+      "failed_checks": [],
+      "notes": [
+        "Amount diff $0.00 (0.00%) within tolerance",
+        "Date diff 0 days within tolerance"
+      ],
+      "details": {
+        "amount_diff": 0.0,
+        "amount_pct_diff": 0.0,
+        "date_diff_days": 0
+      }
+    },
+    "raw_scores": {
+      "composite": 0.8545454545454545
+    },
+    "metadata": {
+      "matched_stage": "FUZZY_DIRECT",
+      "amount": 3319.21,
+      "currency": "USD"
+    }
+  },
+  {
+    "record_id": "BANK:B-0022-DUP1",
+    "status": "EXCEPTION",
+    "stage_resolved": null,
+    "matched_with_ids": [],
+    "confidence": 0.0,
+    "rationale": "Exception: LIKELY_DUPLICATE. Cloned duplicate in BANK matching BANK:B-0022.",
+    "exception_reason": "LIKELY_DUPLICATE",
+    "validation_result": null,
+    "raw_scores": {},
+    "metadata": {
+      "duplicate_of": "BANK:B-0022"
+    }
+  },
+  {
+    "record_id": "BANK:B-0006-DUP2",
+    "status": "EXCEPTION",
+    "stage_resolved": null,
+    "matched_with_ids": [],
+    "confidence": 0.0,
+    "rationale": "Exception: LIKELY_DUPLICATE. Cloned duplicate in BANK matching BANK:B-0006.",
+    "exception_reason": "LIKELY_DUPLICATE",
+    "validation_result": null,
+    "raw_scores": {},
+    "metadata": {
+      "duplicate_of": "BANK:B-0006"
+    }
+  },
+  {
+    "record_id": "BANK:B-0053-DUP3",
+    "status": "EXCEPTION",
+    "stage_resolved": null,
+    "matched_with_ids": [],
+    "confidence": 0.0,
+    "rationale": "Exception: LIKELY_DUPLICATE. Cloned duplicate in BANK matching BANK:B-0053.",
+    "exception_reason": "LIKELY_DUPLICATE",
+    "validation_result": null,
+    "raw_scores": {},
+    "metadata": {
+      "duplicate_of": "BANK:B-0053"
+    }
+  }
+]

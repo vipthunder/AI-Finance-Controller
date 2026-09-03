@@ -1,0 +1,44 @@
+[
+  {
+    "record_id": "BANK:B-0022-DUP1",
+    "status": "EXCEPTION",
+    "stage_resolved": null,
+    "matched_with_ids": [],
+    "confidence": 0.0,
+    "rationale": "Exception: LIKELY_DUPLICATE. Cloned duplicate in BANK matching BANK:B-0022.",
+    "exception_reason": "LIKELY_DUPLICATE",
+    "validation_result": null,
+    "raw_scores": {},
+    "metadata": {
+      "duplicate_of": "BANK:B-0022"
+    }
+  },
+  {
+    "record_id": "BANK:B-0006-DUP2",
+    "status": "EXCEPTION",
+    "stage_resolved": null,
+    "matched_with_ids": [],
+    "confidence": 0.0,
+    "rationale": "Exception: LIKELY_DUPLICATE. Cloned duplicate in BANK matching BANK:B-0006.",
+    "exception_reason": "LIKELY_DUPLICATE",
+    "validation_result": null,
+    "raw_scores": {},
+    "metadata": {
+      "duplicate_of": "BANK:B-0006"
+    }
+  },
+  {
+    "record_id": "BANK:B-0053-DUP3",
+    "status": "EXCEPTION",
+    "stage_resolved": null,
+    "matched_with_ids": [],
+    "confidence": 0.0,
+    "rationale": "Exception: LIKELY_DUPLICATE. Cloned duplicate in BANK matching BANK:B-0053.",
+    "exception_reason": "LIKELY_DUPLICATE",
+    "validation_result": null,
+    "raw_scores": {},
+    "metadata": {
+      "duplicate_of": "BANK:B-0053"
+    }
+  }
+]
