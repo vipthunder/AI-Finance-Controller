@@ -116,7 +116,7 @@ All figures below are extracted directly from `outputs/reports/metrics.json` pro
 
 ---
 
-## 🤖 Genuine AI Judgment Architecture
+##  Genuine AI Judgment Architecture
 
 Financial reconciliation demands absolute mathematical correctness. A system that allows an LLM to hallucinate debit/credit pairings or bypass financial tolerances is fundamentally indefensible in production.
 
@@ -131,7 +131,7 @@ Financial reconciliation demands absolute mathematical correctness. A system tha
 
 ---
 
-## 🛡️ Failure Recovery & Real Engineering Bugs Solved
+##  Failure Recovery & Real Engineering Bugs Solved
 
 Every failure documented below was an actual defect uncovered and resolved during the hardening pass:
 
@@ -161,7 +161,7 @@ Every failure documented below was an actual defect uncovered and resolved durin
 
 ---
 
-## 🔒 Unified Configuration (`configs/thresholds.yaml` & `src/config.py`)
+##  Unified Configuration (`configs/thresholds.yaml` & `src/config.py`)
 
 All tolerances and thresholds are centrally defined and loaded via Pydantic models:
 
@@ -190,7 +190,7 @@ candidate_generation:
 
 ---
 
-## 🧪 Comprehensive Automated Test Suite (171 Tests)
+##  Comprehensive Automated Test Suite (171 Tests)
 
 Run the full automated test suite verifying all buildathon requirements:
 
@@ -212,7 +212,7 @@ python -m pytest tests/ -v
 
 ---
 
-## ⚠️ System Limitations & Honest Scope
+##  System Limitations & Honest Scope
 
 1. **Batch Scaling:** The current pipeline operates in-memory with sub-100ms execution on batches of hundreds of multi-source records (~2,700 rec/sec). High-volume enterprise environments processing tens of millions of records daily would distribute candidate generation and blocking across Apache Spark or distributed streaming queues (e.g. Kafka).
 2. **Wire Fee Tolerance Bounds:** Financial tolerances are bounded at $28.00 absolute and 5.0% relative in `configs/thresholds.yaml` to prevent fraud. Edge-case cross-border wires incurring exotic correspondent fees (> $28) are safely routed to the human exception queue for manual approval.
@@ -220,7 +220,7 @@ python -m pytest tests/ -v
 
 ---
 
-## 🚀 Execution & Verification Commands
+##  Execution & Verification Commands
 
 ### 1. Run Clean Evaluation & Generate Output Artifacts
 ```bash
