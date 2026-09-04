@@ -1,6 +1,6 @@
-# AI Finance Controller
+# AI Finance Controller — Track 04
 
-### Track 04 — Multi-Source Financial Reconciliation Engine
+### Multi-Source Financial Reconciliation Engine
 
 An automated system for matching transactions across ledgers, bank statements, and invoices.
 
@@ -51,78 +51,59 @@ Dates can differ because of settlement delays.
 
 Duplicates can appear in individual source systems.
 
-The system needs to handle all of these cases without creating incorrect financial matches.
+The system needs to handle these cases without creating incorrect financial matches.
 
 ---
 
 # Architecture
 
 ```text
-                    ┌──────────────────────────┐
-                    │ Ledger / Bank / Invoice  │
-                    └────────────┬─────────────┘
-                                 │
-                                 ▼
-                    ┌──────────────────────────┐
-                    │ Ingestion & Normalizer   │
-                    │                          │
-                    │ Dates • Amounts • Vendors│
-                    │ References • Aliases     │
-                    └────────────┬─────────────┘
-                                 │
-                                 ▼
-                    ┌──────────────────────────┐
-                    │ Candidate Generator      │
-                    │                          │
-                    │ Reference Blocking       │
-                    │ Entity Blocking          │
-                    │ Proximity Blocking       │
-                    └────────────┬─────────────┘
-                                 │
-                                 ▼
-                    ┌──────────────────────────┐
-                    │      Exact Matcher       │
-                    └────────────┬─────────────┘
-                                 │
-                                 ▼
-                    ┌──────────────────────────┐
-                    │      Fuzzy Scorer        │
-                    │        RapidFuzz          │
-                    └────────────┬─────────────┘
-                                 │
-                        ┌────────┴────────┐
-                        │                 │
-                     ≥ 0.85          0.50–0.85
-                        │                 │
-                        ▼                 ▼
-                  Direct Match      AI Verification
-                        │                 │
-                        └────────┬────────┘
-                                 ▼
-                    ┌──────────────────────────┐
-                    │ Collision Resolution     │
-                    │                          │
-                    │ Losing proposals become  │
-                    │ SUPERSEDED               │
-                    └────────────┬─────────────┘
-                                 │
-                                 ▼
-                    ┌──────────────────────────┐
-                    │ Deterministic Validator  │
-                    └────────────┬─────────────┘
-                                 │
-                         ┌───────┴───────┐
-                         │               │
-                        PASS            FAIL
-                         │               │
-                         ▼               ▼
-                    Resolved         Exception
-                         │               │
-                         └───────┬───────┘
-                                 ▼
-                    ┌──────────────────────────┐
-                    │       Audit Trail        │
-                    └──────────────────────────┘
+                        [ Ingestion & Normalizer ] 
+                  (Canonical Vendor Catalog & Legal Suffix Stripping)
+                                   │
+                                   ▼
+[ Multi-Signal Candidate Generator (Blocking) ] ──(Reference, Entity, Proximity Blocking)
+                                   │
+                                   ▼
+                          [ Exact Matcher ] ──────────(Exact Pairs)─────────────┐
+                                   │                                            │
+                          (Unmatched Candidates)                                │
+                                   │                                            │
+                                   ▼                                            │
+                      [ Fuzzy Scorer (Rapidfuzz) ]                              │
+                                   │                                            │
+                  ┌────────────────┴────────────────────┐                       │
+                  │ Score >= 0.85       0.50 <= Score < 0.85                    │
+                  ▼                              ▼                              │
+          (Direct Fuzzy Match)            [ AI Verifier ]                       │
+                  │                        (LLMProvider Abstraction:            │
+                  │                          Gemini)                            │
+                  │                              │                              │
+                  │                       (Score >= 0.75)                       │
+                  │                              │                              │
+                  └──────────────────┬───────────┘                              │
+                                     ▼                                          │
+                       [ Collision & Competition Policy ]                       │
+                         (Losing matches → SUPERSEDED)                          │
+                                     │                                          │
+                                     ▼                                          │
+                       [ Authoritative Deterministic Validator ]  ◄─────────────┘
+                         (Amounts, Dates, Currencies, Duplicate Clones)
+                                     │
+                            ┌────────┴─────────┐
+                            │                  │
+                          PASS               FAIL
+                            │                  │
+                            ▼                  ▼
+                  [ Decision Controller ]  [ Exception Investigator ]
+                            │                  │
+                            ▼                  ▼
+                    (Resolved Match)      (Human Escalation Queue)
+                            │                  │
+                            └────────┬─────────┘
+                                     ▼
+                       [ Immutable Audit Trail ]
+                (outputs/audit/audit.json & decisions.json)
 ```
 
 ---
@@ -214,7 +195,7 @@ Current candidate-generation limits include:
 ```text
 Maximum date difference:        14 days
 Maximum percentage difference:  20%
-Maximum absolute difference:    $60
+Maximum absolute difference:    $30
 ```
 
 This reduces the search space before fuzzy scoring.
@@ -976,36 +957,8 @@ Live AI mode depends on external API availability.
 
 ---
 
-# Final Design Principle
+# Final Principle
 
-The project separates matching, reasoning, and financial control.
-
-```text
-Normalize
-    ↓
-Generate Candidates
-    ↓
-Match Exactly
-    ↓
-Score Fuzzy Candidates
-    ↓
-Use AI Only for Ambiguity
-    ↓
-Resolve Collisions
-    ↓
-Validate Financially
-    ↓
-Resolve or Escalate
-    ↓
-Audit Everything
-    ↓
-Evaluate Independently
-```
-
-The goal is not to replace financial controls with AI.
-
-The goal is to use AI where it adds useful judgment.
-
-The final financial decision remains deterministic and auditable.
+The system separates matching, AI reasoning, and financial control.
 
 > **AI proposes. Deterministic controls decide.**
