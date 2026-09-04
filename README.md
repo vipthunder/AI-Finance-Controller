@@ -22,10 +22,10 @@ A production-grade, technically defensible, auditable financial reconciliation e
                       [ Fuzzy Scorer (Rapidfuzz) ]                              │
                                    │                                            │
                ┌───────────────────┴───────────────────┐                        │
-               │ Score >= 0.85        0.50 <= Score < 0.85                     │
+               │ Score >= 0.85        0.50 <= Score < 0.85                      |
                ▼                                       ▼                        │
        (Direct Fuzzy Match)                    [ AI Verifier ]                  │
-               │                            (LLMProvider Abstraction:          │
+               │                            (LLMProvider Abstraction:           |
                │                             Gemini/OpenAI or Mock)             │
                │                                       │                        │
                │                                (Score >= 0.75)                 │
