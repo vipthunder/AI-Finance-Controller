@@ -147,7 +147,7 @@ Known aliases can also map to the same canonical entity.
 
 ```text
 "AWS"
-"AWS*US-EAST-1"
+"AWS US-EAST-1"
 "AMZN WEB SERVICES"
             ↓
 AMAZON WEB SERVICES
