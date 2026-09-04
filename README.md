@@ -926,7 +926,7 @@ python -m pytest tests/ -v
 | Rich            | Terminal reporting         |
 | Streamlit       | Dashboard                  |
 | Pytest          | Automated testing          |
-| OpenAI / Gemini | Live AI verification       |
+| Gemini          | Live AI verification       |
 
 ---
 
