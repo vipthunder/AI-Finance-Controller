@@ -4,7 +4,7 @@ A production-grade, technically defensible, auditable financial reconciliation e
 
 ---
 
-## 🏛️ System Architecture
+##  System Architecture
 
 ```
                        [ Ingestion & Normalizer ] 
@@ -56,7 +56,7 @@ A production-grade, technically defensible, auditable financial reconciliation e
 
 ---
 
-## ⚡ 5-Minute Razorpay Pitch
+##  5-Minute Razorpay Pitch
 
 ### 1. The Core Problem in Modern B2B Reconciliation
 Fintech platforms and high-growth enterprises process millions of transactions daily across legacy ERPs, payment gateways, and diverse banking rails. Real-world financial feeds are notoriously messy:
@@ -77,7 +77,7 @@ Fintech platforms and high-growth enterprises process millions of transactions d
 
 ---
 
-## 📊 Authoritative Benchmark Scorecard (Clean Benchmark: Seed 42, 60 Tx, 179 Records)
+##  Authoritative Benchmark Scorecard (Clean Benchmark: Seed 42, 60 Tx, 179 Records)
 
 All figures below are extracted directly from `outputs/reports/metrics.json` produced by `python scripts/evaluate.py`:
 
