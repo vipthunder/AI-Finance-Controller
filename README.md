@@ -31,7 +31,7 @@ Amount:    $10,000
 Reference: REF-1042
 
 Bank
-Vendor:    AWS*US-EAST-1
+Vendor:    AWS US-EAST-1
 Amount:    $9,980
 Reference: ACH-7781
 
