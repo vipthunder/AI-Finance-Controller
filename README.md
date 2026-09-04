@@ -1,169 +1,795 @@
-# AI Finance Controller — Track 04: Multi-Source Financial Reconciliation Engine
+# AI Finance Controller
 
-A production-grade, technically defensible, auditable financial reconciliation engine built for the **Razorpay Buildathon**. Reconciles complex multi-source transactions across **General Ledger (Internal ERP)**, **Bank Statements (External Settlements)**, and **Invoices (Accounts Payable)** with authoritative deterministic controls, genuine AI verification, and 100% decision traceability.
+### Track 04 — Multi-Source Financial Reconciliation Engine
+
+An automated system for matching transactions across ledgers, bank statements, and invoices.
+
+Financial records from different systems rarely look identical. Vendor names change, references differ, settlement dates move, and duplicate records can appear.
+
+This project combines **exact matching, fuzzy matching, AI verification, deterministic validation, exception handling, and audit logging** to reconcile those records safely.
+
+> **AI proposes. Deterministic controls decide.**
 
 ---
 
-##  System Architecture
+## Objective
 
-```
-                       [ Ingestion & Normalizer ] 
-                       (Canonical Vendor Catalog & Legal Suffix Stripping)
-                                   │
-                                   ▼
-[ Multi-Signal Candidate Generator (Blocking) ] ──(Reference, Entity, Proximity Blocking)
-                                   │
-                                   ▼
-                          [ Exact Matcher ] ──────────(Exact Pairs)─────────────┐
-                                   │                                            │
-                          (Unmatched Candidates)                                │
-                                   │                                            │
-                                   ▼                                            │
-                      [ Fuzzy Scorer (Rapidfuzz) ]                              │
-                                   │                                            │
-               ┌───────────────────┴───────────────────┐                        │
-               │ Score >= 0.85        0.50 <= Score < 0.85                      |
-               ▼                                       ▼                        │
-       (Direct Fuzzy Match)                    [ AI Verifier ]                  │
-               │                            (LLMProvider Abstraction:           |
-               │                             Gemini/OpenAI or Mock)             │
-               │                                       │                        │
-               │                                (Score >= 0.75)                 │
-               │                                       │                        │
-               └───────────────────────┬───────────────┘                        │
-                                       ▼                                        │
-                      [ Collision & Competition Policy ]                        │
-                        (Losing matches → SUPERSEDED)                           │
-                                       │                                        │
-                                       ▼                                        │
-                      [ Authoritative Deterministic Validator ] <───────────────┘
-                        (Amounts, Dates, Currencies, Duplicate Clones)
-                                       │
-                         ┌─────────────┴─────────────┐
-                       PASS                         FAIL
-                         │                            │
-                         ▼                            ▼
-               [ Decision Controller ]      [ Exception Investigator ]
-                         │                            │
-                         ▼                            ▼
-                 (Resolved Match)           (Human Escalation Queue)
-                         │                            │
-                         └─────────────┬──────────────┘
-                                       ▼
-                         [ Immutable Audit Trail ]
-                 (outputs/audit/audit.json & decisions.json)
+> Automatically match transactions from the ledger, bank statements, and invoices accurately and safely.
+
+---
+
+## The Problem
+
+The same business transaction can look different across financial systems.
+
+For example:
+
+```text
+Ledger
+Vendor:    AMAZON WEB SERVICES INC
+Amount:    $10,000
+Reference: REF-1042
+
+Bank
+Vendor:    AWS*US-EAST-1
+Amount:    $9,980
+Reference: ACH-7781
+
+Invoice
+Vendor:    AMZN WEB SERVICES
+Amount:    $10,000
+Reference: INV-4821
 ```
 
----
+These records can represent the same underlying transaction.
 
-##  5-Minute Razorpay Pitch
+A simple exact matcher may fail to connect them.
 
-### 1. The Core Problem in Modern B2B Reconciliation
-Fintech platforms and high-growth enterprises process millions of transactions daily across legacy ERPs, payment gateways, and diverse banking rails. Real-world financial feeds are notoriously messy:
-* **Statement narrative noise:** `"AWS*US-EAST-1"`, `"AMZN WEB SERVICES"`, `"AMAZON WEB SERVICES INC"`
-* **Deducted intermediary wire fees:** A $10,000 disbursement arriving as $9,980 after a $20 processing fee.
-* **Settlement timing lag:** Invoices issued on Friday settling via ACH or RTGS on Tuesday.
-* **Intra-source cloned duplicates:** Double-debits or retry attempts in bank feeds that naive matchers link to pending invoices.
+Amounts can also differ because of fees.
 
-### 2. Why Conventional Heuristics & Unconstrained AI Both Fail
-* **Pure heuristic rules** either suffer high false positives or artificially deflate recall when fees, timing lags, or name variations appear.
-* **Unconstrained AI / LLMs** are non-deterministic, hallucinatory, and legally indefensible. Financial reconciliations demand deterministic guarantees.
+Dates can differ because of settlement delays.
 
-### 3. The Antigravity Solution: Targeted AI within Authoritative Guardrails
-* **Authoritative Deterministic Controls:** No AI or fuzzy match can ever commit directly. The shared `DeterministicValidator` strictly enforces currency consistency, amount tolerances ($28 absolute / 5% relative), date windows, and intra-source duplicate locks.
-* **Genuine AI Provider Abstraction:** Mid-band ambiguous candidates are inspected by `AIVerifier` via `BaseLLMProvider` (`LiveLLMProvider` with structured JSON schema or deterministic `MockLLMProvider`), recording token latency and estimated cost.
-* **Zero Silent Drops:** Every record reaches an explicit terminal state. If an AI-accepted pair collides with an earlier match, the losing candidate is deterministically flagged as `SUPERSEDED` with cross-references and audit entries.
-* **Actionable Human Escalation Queue:** Exceptions are never dead ends. Every exception contains an ID, source IDs, root-cause reason code (`AMBIGUOUS`, `LIKELY_DUPLICATE`, `VALIDATION_FAILED`), financial amounts, and suggested human remediation actions.
+Duplicates can appear in individual source systems.
+
+The system needs to handle all of these cases without creating incorrect financial matches.
 
 ---
 
-##  Authoritative Benchmark Scorecard (Clean Benchmark: Seed 42, 60 Tx, 179 Records)
+# Architecture
 
-All figures below are extracted directly from `outputs/reports/metrics.json` produced by `python scripts/evaluate.py`:
-
-| Level / Category | Metric | Value | Technical Defense & Definition |
-| :--- | :--- | :---: | :--- |
-| **RELATIONSHIP LEVEL** | **Candidate Recall** | **100.00%** | Multi-signal blocking (reference, canonical entity, proximity) captures all 172 eligible GT relationships. |
-| | **Relationship Precision** | **100.00%** | Zero false positives (`FP = 0`). Every committed relationship verified by deterministic controls. |
-| | **Relationship Recall** | **100.00%** | All 172 ground-truth relationships committed across Ledger, Bank, and Invoice (`TP = 172`). |
-| | **Relationship F1 Score** | **100.00%** | Harmonic mean: $2 \times P \times R / (P + R) = 1.0000$. |
-| **TRANSACTION LEVEL** | **Canonical Transactions** | **60** | Distinct economic business transactions in ground-truth store. |
-| | **Fully Reconciled Tx** | **60 (100.00%)** | All source records and relationships belonging to each transaction are completely resolved. |
-| | **Partially Reconciled Tx** | **0 (0.00%)** | Zero transactions left with incomplete source matching. |
-| | **Unresolved Tx** | **0 (0.00%)** | Zero transactions abandoned. |
-| **AI PROPOSAL LEVEL** | **AI Invocations** | **144** | Mid-band ambiguous candidate pairs routed to LLM provider. |
-| | **AI Accepted** | **23** | Structured LLM verification approved 23 ambiguous candidate pairs with confidence $\ge 0.75$. |
-| | **AI Committed** | **21** | **Active AI Contribution:** 21 AI-verified proposals won global slot competition and committed as final matches. |
-| | **AI Validation Failed** | **2** | Deterministic safety validator caught 2 candidates violating financial tolerances. |
-| | **AI Superseded** | **0** | Zero AI proposals lost to invalid collisions. |
-| | **AI Invariant Accounting** | **100.00%** | `AI_ACCEPTED (23) == AI_COMMITTED (21) + AI_VAL_FAILED (2) + AI_SUPERSEDED (0) + AI_FAILED (0)`. |
-| | **AI Recommendation Precision** | **91.30%** | Correct AI recommendations / all AI accepted proposals ($21 / 23$). |
-| | **AI Recommendation Recall** | **100.00%** | Correct AI recommendations / AI-eligible GT relationships ($21 / 21$). |
-| | **AI Contribution Recall** | **12.21%** | Global GT relationships resolved by AI / all GT relationships ($21 / 172$). |
-| **FINANCIAL LEVEL** | **Total Canonical Value** | **$182,008.84** | De-duplicated true business transaction value across 3 systems (prevents triple counting). |
-| | **Fully Reconciled Value** | **$182,008.84** | **100.00%** of underlying business transaction volume fully resolved. |
-| | **Unresolved Canonical Value** | **$0.00** | Canonical transactions left unreconciled. |
-| | **Incorrectly Matched Value** | **$0.00** | **Zero financial capital at risk** from misallocated settlements. |
-| | **Exception Source-Record Exposure** | **$18,666.10** | Exposure held in exception queue (strictly duplicate clones and missing records). |
-| **SAFETY & AUDIT** | **Duplicate Escape Rate** | **0.0000** | Cloned bank records blocked by intra-source duplicate detection. |
-| | **Critical Error Rate** | **0.0000** | Zero currency mismatches or same-source pairs committed. |
-| | **Silent-Drop Count** | **0** | Invariant verified: every input record maps to exactly one terminal state (`decisions == records`). |
-| | **Audit Trail Integrity** | **100%** | Every decision, exception, and proposal logged to `outputs/audit/audit.json`. |
-| **PERFORMANCE** | **Throughput** | **~2,700 rec/sec** | Sub-100ms pipeline execution across 179 records (excludes dataset generation). |
-
-> **Core Financial Design Principle:**  
-> *AI proposes. Deterministic financial controls decide. Global competition resolves conflicts. Exceptions capture uncertainty. Audit records everything. Independent evaluation measures truth.*
-
----
-
-##  Genuine AI Judgment Architecture
-
-Financial reconciliation demands absolute mathematical correctness. A system that allows an LLM to hallucinate debit/credit pairings or bypass financial tolerances is fundamentally indefensible in production.
-
-### Where AI IS Used
-* **Mid-Band Ambiguity (0.50 ≤ Composite Score < 0.85):** When names possess substantial variation (e.g. `"L&W Legal"` vs `"LATHAM & WATKINS LLP"`, or `"SFDC"` vs `"SALESFORCE INC"`), AI provides semantic reasoning, entity grounding, and risk-flag detection.
-* **Structured Decision Outputs:** The LLM produces a strict JSON payload with boolean approval, confidence, structured decision rationale, and identified discrepancy vectors.
-
-### Where AI IS NOT Used
-* **Exact Matching:** Handled purely by deterministic O(1) hash lookups on reference identifiers and exact attributes.
-* **Deterministic Financial Validation:** The LLM *never* commits a transaction. Every match proposed by AI must independently pass the `DeterministicValidator` (currency consistency, amount tolerance, date window, duplicate checks).
-* **Policy Enforcement:** Financial controls and regulatory constraints remain deterministic, auditable, and code-enforced.
-
----
-
-##  Failure Recovery & Real Engineering Bugs Solved
-
-Every failure documented below was an actual defect uncovered and resolved during the hardening pass:
-
-### 1. Silent Drop of AI Recommendations
-* **Symptom:** AI evaluated 23 mid-band candidate pairs, accepted them, but reported `AI committed = 0` and records appeared to vanish.
-* **Root Cause:** A collision check noticed that the counterparty record had already been committed in an earlier high-confidence stage and called `continue`, silently discarding the candidate pair without a terminal decision.
-* **Engineering Fix:** Implemented explicit `SUPERSEDED` state in `DecisionController` and `ReconciliationPipeline`. The losing match is recorded with conflicting transaction pointers, rationale, and audit events.
-* **Regression Guard:** `tests/test_stopping_conditions.py::test_sc01_ai_accepted_not_silently_lost`.
-
-### 2. Candidate Recall Conflation
-* **Symptom:** Candidate recall was reported as a unified number that masked candidate generation bottlenecks by combining candidate generation with exact matching.
-* **Root Cause:** Exact matches were being injected into the evaluation candidate pool, inflating candidate recall.
-* **Engineering Fix:** Disentangled metrics into `raw_candidate_recall` (pure candidate generator performance), `exact_match_coverage`, and `final_reconciliation_recall`.
-* **Regression Guard:** `tests/test_full_pyramid.py::test_sc07_candidate_recall_is_measured`.
-
-### 3. Financial Metric Multi-Counting Across Data Sources
-* **Symptom:** Total value reported exceeded $559k for transactions representing ~$182k in actual business volume.
-* **Root Cause:** Naive sum of all records in Ledger + Bank + Invoice summed each underlying economic transaction 2 to 3 times.
-* **Engineering Fix:** Implemented transaction-level canonical accounting via `GroundTruthStore` mapping canonical business values (`$182,008.84`) separately from raw source sums.
-* **Regression Guard:** `tests/test_full_pyramid.py::test_sc09_financial_value_reconciliation_is_measured` and `tests/test_financial_value.py`.
-
-### 4. Silent Live → Mock Fallback
-* **Symptom:** When live LLM API keys failed or timed out, the provider silently defaulted to mock heuristic values, giving false confidence in live AI.
-* **Root Cause:** Broad `try...except` block in `LiveLLMProvider` caught API errors and substituted mock responses.
-* **Engineering Fix:** Removed silent fallbacks. API errors now set `is_error=True`, flag `ai_failed_count`, and explicitly report provider mode as `ERROR` or `LIVE`.
-* **Regression Guard:** `src/verification/llm_provider.py` and `tests/test_ai_verification.py`.
+```text
+                    ┌──────────────────────────┐
+                    │ Ledger / Bank / Invoice  │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ Ingestion & Normalizer   │
+                    │                          │
+                    │ Dates • Amounts • Vendors│
+                    │ References • Aliases     │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ Candidate Generator      │
+                    │                          │
+                    │ Reference Blocking       │
+                    │ Entity Blocking          │
+                    │ Proximity Blocking       │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │      Exact Matcher       │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │      Fuzzy Scorer        │
+                    │        RapidFuzz          │
+                    └────────────┬─────────────┘
+                                 │
+                        ┌────────┴────────┐
+                        │                 │
+                     ≥ 0.85          0.50–0.85
+                        │                 │
+                        ▼                 ▼
+                  Direct Match      AI Verification
+                        │                 │
+                        └────────┬────────┘
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ Collision Resolution     │
+                    │                          │
+                    │ Losing proposals become  │
+                    │ SUPERSEDED               │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ Deterministic Validator  │
+                    └────────────┬─────────────┘
+                                 │
+                         ┌───────┴───────┐
+                         │               │
+                        PASS            FAIL
+                         │               │
+                         ▼               ▼
+                    Resolved         Exception
+                         │               │
+                         └───────┬───────┘
+                                 ▼
+                    ┌──────────────────────────┐
+                    │       Audit Trail        │
+                    └──────────────────────────┘
+```
 
 ---
 
-##  Unified Configuration (`configs/thresholds.yaml` & `src/config.py`)
+# How It Works
 
-All tolerances and thresholds are centrally defined and loaded via Pydantic models:
+## 1. Ingestion and Normalization
+
+The project works with three source systems:
+
+```text
+data/raw/
+├── ledger.csv
+├── bank.csv
+└── invoices.csv
+```
+
+Each source uses different field names and formats.
+
+The normalizer converts them into a common internal representation.
+
+It handles:
+
+* Date normalization
+* Amount normalization
+* Currency normalization
+* Vendor normalization
+* Whitespace and punctuation cleanup
+* Legal suffix handling
+* Canonical entity mapping
+
+### Example
+
+```text
+"AMAZON WEB SERVICES INC."
+            ↓
+"AMAZON WEB SERVICES"
+```
+
+Known aliases can also map to the same canonical entity.
+
+```text
+"AWS"
+"AWS*US-EAST-1"
+"AMZN WEB SERVICES"
+            ↓
+AMAZON WEB SERVICES
+```
+
+This gives the matching stages a consistent view of the data.
+
+---
+
+# 2. Candidate Generation
+
+The system does not compare every record with every other record.
+
+Instead, it generates a smaller set of plausible candidates.
+
+Three blocking strategies are used.
+
+### Reference Blocking
+
+Records sharing useful reference evidence become candidates.
+
+```text
+REF-1042
+   │
+   ├── Ledger L-1042
+   └── Bank B-1042
+```
+
+### Entity Blocking
+
+Records mapped to the same canonical entity can become candidates.
+
+```text
+MICROSOFT AZURE
+MS AZURE COMPUTING
+AZURE
+```
+
+### Proximity Blocking
+
+Candidates can also be generated using amount and date proximity.
+
+Current candidate-generation limits include:
+
+```text
+Maximum date difference:        14 days
+Maximum percentage difference:  20%
+Maximum absolute difference:    $60
+```
+
+This reduces the search space before fuzzy scoring.
+
+---
+
+# 3. Exact Matching
+
+Exact matching handles the strongest cases first.
+
+Example:
+
+```text
+Ledger
+Date:       2024-05-20
+Amount:     $147.52
+Currency:   USD
+Vendor:     STRIPE
+```
+
+```text
+Bank
+Date:       2024-05-20
+Amount:     $147.52
+Currency:   USD
+Vendor:     STRIPE
+```
+
+When the relevant attributes agree, the relationship can be resolved deterministically.
+
+There is no need to involve AI.
+
+---
+
+# 4. Fuzzy Matching
+
+Some valid matches are not exact.
+
+The fuzzy matcher uses RapidFuzz.
+
+The composite score uses:
+
+```text
+Vendor similarity   → 40%
+Amount similarity   → 40%
+Date similarity     → 20%
+```
+
+### Example
+
+```text
+Ledger
+Vendor: LATHAM & WATKINS LLP
+Amount: $4,850
+Date:   2024-08-12
+```
+
+```text
+Bank
+Vendor: L&W LEGAL
+Amount: $4,850
+Date:   2024-08-13
+```
+
+The vendor names differ.
+
+The amount matches exactly.
+
+The dates are close.
+
+This is the type of case where fuzzy matching can identify a likely relationship.
+
+---
+
+# 5. Confidence Routing
+
+The fuzzy score determines what happens next.
+
+```text
+Score ≥ 0.85
+      ↓
+Direct fuzzy match
+```
+
+Ambiguous candidates enter AI verification:
+
+```text
+0.50 ≤ Score < 0.85
+      ↓
+AI verification
+```
+
+This prevents straightforward transactions from unnecessarily going through an LLM.
+
+---
+
+# 6. AI Verification
+
+AI is used only for ambiguous candidate pairs.
+
+The project uses a provider abstraction:
+
+```text
+BaseLLMProvider
+      │
+      ├── MockLLMProvider
+      │
+      └── LiveLLMProvider
+```
+
+The AI verifier produces a structured recommendation.
+
+Conceptually:
+
+```json
+{
+  "match": true,
+  "confidence": 0.91,
+  "reason": "Entity aliases and financial attributes are consistent.",
+  "discrepancies": [
+    "Settlement date differs by one day"
+  ]
+}
+```
+
+The recommendation is only a proposal.
+
+AI does not directly commit the transaction.
+
+---
+
+# 7. Deterministic Financial Validation
+
+Every proposed match passes through deterministic validation.
+
+The validator checks:
+
+* Currency consistency
+* Absolute amount difference
+* Relative amount difference
+* Date difference
+* Duplicate conflicts
+* Same-source restrictions
+
+Current validation limits are:
+
+```text
+Maximum absolute amount difference: $28
+Maximum relative difference:        5%
+Maximum date difference:             10 days
+```
+
+### Example
+
+```text
+Ledger → $10,000
+Bank   → $10,900
+```
+
+The AI might consider them related.
+
+However:
+
+```text
+Absolute difference = $900
+Relative difference = 9%
+```
+
+The validator rejects the proposal.
+
+```text
+AI             → MATCH
+Validator      → FAIL
+Final decision → EXCEPTION
+```
+
+This keeps financial authority outside the LLM.
+
+---
+
+# 8. Collision Handling
+
+A collision occurs when multiple proposals compete for the same record.
+
+For example:
+
+```text
+Ledger L-101
+     │
+     ├── Bank B-201
+     │
+     └── Bank B-202
+```
+
+Both candidates may look plausible.
+
+Only one relationship can become the final match.
+
+Suppose B-201 wins:
+
+```text
+L-101 ─────► B-201
+             WINNER
+
+L-101 ─────► B-202
+             SUPERSEDED
+```
+
+The losing proposal is not silently discarded.
+
+It is recorded as `SUPERSEDED`.
+
+This preserves complete decision accounting.
+
+---
+
+# 9. Exception Handling
+
+Some records cannot be safely reconciled automatically.
+
+These cases move into an exception queue.
+
+Current reason codes include:
+
+```text
+AMBIGUOUS
+LIKELY_DUPLICATE
+VALIDATION_FAILED
+NO_CANDIDATE
+```
+
+### Example
+
+```text
+Record: B-1042
+Amount: $5,000
+
+Reason:
+LIKELY_DUPLICATE
+
+Suggested action:
+Review against the original settlement.
+```
+
+The exception investigator also provides suggested remediation actions.
+
+---
+
+# 10. Canonical Financial Accounting
+
+A source record is not the same thing as a business transaction.
+
+Suppose the same transaction appears in three systems:
+
+```text
+Ledger   → $1,000
+Bank     → $1,000
+Invoice  → $1,000
+```
+
+There are three source records.
+
+There is only one underlying business transaction.
+
+A naive sum gives:
+
+```text
+$3,000
+```
+
+The actual business value is:
+
+```text
+$1,000
+```
+
+The project therefore separates source-level records from canonical transactions.
+
+```text
+Source Records
+      ↓
+Matched Relationships
+      ↓
+Canonical Transaction
+      ↓
+Business Value
+```
+
+This prevents double counting.
+
+---
+
+# End-to-End Example
+
+Consider:
+
+```text
+Ledger
+Vendor:    Latham & Watkins LLP
+Amount:    $8,500
+Date:      2024-06-30
+Reference: REF-9012
+```
+
+```text
+Bank
+Vendor:    L&W Legal
+Amount:    $8,480
+Date:      2024-07-02
+Reference: ACH-7712
+```
+
+The system processes them as follows:
+
+```text
+1. Normalize vendor names
+            ↓
+2. Map entities to canonical representations
+            ↓
+3. Generate a candidate pair
+            ↓
+4. Calculate fuzzy similarity
+            ↓
+5. Route the ambiguous case to AI
+            ↓
+6. AI proposes a match
+            ↓
+7. Validator checks amount, date, currency, and duplicates
+            ↓
+8. Proposal passes
+            ↓
+9. Transaction is resolved
+```
+
+This shows where each stage contributes.
+
+---
+
+# Benchmark Results
+
+The included benchmark contains:
+
+```text
+Canonical transactions:     60
+Source records:             179
+Ground-truth relationships: 172
+```
+
+Current results:
+
+| Metric                        |                 Result |
+| ----------------------------- | ---------------------: |
+| Candidate Recall              |               **100%** |
+| Relationship Precision        |               **100%** |
+| Relationship Recall           |               **100%** |
+| Relationship F1               |               **100%** |
+| Fully Reconciled Transactions |            **60 / 60** |
+| Unresolved Transactions       |                  **0** |
+| Incorrectly Matched Value     |                 **$0** |
+| Duplicate Escape Rate         |                  **0** |
+| Critical Error Rate           |                  **0** |
+| Silent Drop Count             |                  **0** |
+| Audit Trail Integrity         |               **100%** |
+| Throughput                    | **~2,700 records/sec** |
+
+The benchmark results are generated from the project's evaluation pipeline.
+
+---
+
+# AI Contribution
+
+The benchmark routed ambiguous candidates through AI verification.
+
+```text
+AI Invocations        144
+AI Accepted            23
+AI Committed            21
+AI Validation Failed    2
+```
+
+The two validation failures are important.
+
+They show that an AI recommendation does not automatically become a financial match.
+
+---
+
+# Financial Results
+
+The benchmark reports:
+
+```text
+Total canonical business value:
+$182,008.84
+```
+
+Fully reconciled value:
+
+```text
+$182,008.84
+```
+
+Unresolved canonical value:
+
+```text
+$0.00
+```
+
+Incorrectly matched value:
+
+```text
+$0.00
+```
+
+Source-level values can be higher because the same transaction appears across multiple systems.
+
+---
+
+# Engineering Challenges
+
+## 1. Silent AI Decisions
+
+An accepted AI proposal could collide with an earlier match.
+
+The proposal could previously disappear without a terminal state.
+
+The project now records the losing proposal as:
+
+```text
+SUPERSEDED
+```
+
+This makes decision accounting explicit.
+
+---
+
+## 2. Candidate Recall Measurement
+
+Candidate recall should measure candidate generation itself.
+
+Exact matches should not inflate that metric.
+
+The evaluation separates:
+
+```text
+Raw candidate recall
+Exact match coverage
+Final reconciliation recall
+```
+
+This provides a clearer measurement of the matching pipeline.
+
+---
+
+## 3. Financial Double Counting
+
+Summing all Ledger, Bank, and Invoice values can count the same transaction multiple times.
+
+Canonical transaction accounting prevents this.
+
+---
+
+## 4. Live AI Failures
+
+A failed live LLM call should not silently become mock output.
+
+The live provider reports failures explicitly.
+
+This prevents a provider outage from appearing as successful AI verification.
+
+---
+
+# Audit Trail
+
+The pipeline records reconciliation decisions and processing events.
+
+Generated outputs include:
+
+```text
+outputs/
+├── audit/
+│   ├── audit.json
+│   └── audit_trail.json
+│
+├── decisions/
+│   └── decisions.json
+│
+└── reports/
+    ├── metrics.json
+    └── exceptions.json
+```
+
+These outputs allow inspection of:
+
+* Matching decisions
+* AI proposals
+* Validation results
+* Superseded proposals
+* Exceptions
+* Evaluation metrics
+
+---
+
+# Testing
+
+The project contains **171 automated tests**.
+
+Run them with:
+
+```bash
+python -m pytest tests/ -v
+```
+
+The tests cover:
+
+```text
+Normalization
+Candidate Generation
+Exact Matching
+Fuzzy Matching
+AI Verification
+Deterministic Validation
+Decision Accounting
+Exception Handling
+Financial Value Reconciliation
+Audit Consistency
+Reproducibility
+Configuration
+Integration Scenarios
+```
+
+Failure scenarios are also tested.
+
+Examples include:
+
+```text
+Duplicate conflicts
+Currency mismatches
+Validation failures
+Competing proposals
+Silent drops
+Candidate recall
+Financial value reconciliation
+```
+
+---
+
+# Reproducibility
+
+The synthetic dataset uses:
+
+```text
+Seed = 42
+```
+
+The default benchmark uses:
+
+```text
+MockLLMProvider
+```
+
+This makes benchmark execution reproducible without external API calls.
+
+Live AI verification can be enabled separately.
+
+---
+
+# Configuration
+
+Important thresholds are centralized in:
+
+```text
+configs/thresholds.yaml
+```
+
+Example:
 
 ```yaml
 router:
@@ -172,73 +798,214 @@ router:
 
 ai_verification:
   acceptance_threshold: 0.75
-  provider: "mock" # "live" for OpenAI/Gemini
+  provider: "mock"
 
 validator:
-  max_amount_abs_tolerance: 28.00  # Absorbs intermediary wire fees ($15-$25)
-  max_amount_pct_tolerance: 0.05   # 5% relative variance
-  max_date_tolerance_days: 10      # Settlement timing window
+  max_amount_abs_tolerance: 28.0
+  max_amount_pct_tolerance: 0.05
+  max_date_tolerance_days: 10
 
 candidate_generation:
   max_date_diff_days: 14
   max_amount_pct_diff: 0.20
-  max_amount_abs_diff: 30.00
-  enable_reference_blocking: true
-  enable_entity_blocking: true
-  enable_proximity_blocking: true
+  max_amount_abs_diff: 30.0
+
+scoring:
+  weight_name: 0.40
+  weight_amount: 0.40
+  weight_date: 0.20
+```
+
+This keeps important behavior configurable.
+
+---
+
+# Project Structure
+
+```text
+AI Finance Controller/
+│
+├── configs/
+│   ├── settings.yaml
+│   └── thresholds.yaml
+│
+├── data/
+│   ├── raw/
+│   │   ├── bank.csv
+│   │   ├── invoices.csv
+│   │   └── ledger.csv
+│   │
+│   └── ground_truth/
+│       └── ground_truth.json
+│
+├── dashboard/
+│   └── app.py
+│
+├── outputs/
+│   ├── audit/
+│   ├── decisions/
+│   └── reports/
+│
+├── scripts/
+│   ├── evaluate.py
+│   ├── generate_data.py
+│   ├── run_demo.py
+│   └── run_pipeline.py
+│
+├── src/
+│   ├── audit/
+│   ├── config.py
+│   ├── controller/
+│   ├── data_generation/
+│   ├── evaluation/
+│   ├── ingestion/
+│   ├── investigation/
+│   ├── matching/
+│   ├── pipeline/
+│   ├── schemas/
+│   ├── validation/
+│   └── verification/
+│
+├── tests/
+│
+├── pyproject.toml
+└── README.md
 ```
 
 ---
 
-##  Comprehensive Automated Test Suite (171 Tests)
+# Installation
 
-Run the full automated test suite verifying all buildathon requirements:
+Install the project with:
+
+```bash
+pip install -e .
+```
+
+For development and testing:
+
+```bash
+pip install -e ".[dev]"
+```
+
+---
+
+# Running the Project
+
+## Run the reconciliation pipeline
+
+```bash
+python scripts/run_pipeline.py
+```
+
+## Run the full evaluation
+
+```bash
+python scripts/evaluate.py
+```
+
+This generates:
+
+```text
+outputs/reports/metrics.json
+outputs/reports/exceptions.json
+outputs/decisions/decisions.json
+outputs/audit/audit.json
+```
+
+## Run the demo
+
+```bash
+python scripts/run_demo.py
+```
+
+## Generate synthetic data
+
+```bash
+python scripts/generate_data.py
+```
+
+## Run all tests
 
 ```bash
 python -m pytest tests/ -v
 ```
 
-### Key Test Categories
-* `tests/test_isolation.py`: AST-based import-boundary test enforcing that production modules never import `ground_truth`, `SyntheticDataGenerator`, or `evaluator`.
-* `tests/test_integration_scenarios.py`: 12 end-to-end integration tests covering exact, fuzzy, AI, validator rejection, superseded proposals, duplicate conflicts, unresolved exceptions, currency mismatches, blocking failures, competing proposals, and partial reconciliation.
-* `tests/test_metric_fixtures.py`: 15 fixture tests including all 4 mandatory adversarial evaluation fixtures (TP/FP/FN set theory, equal counts with wrong relationships, candidate recall, and cross-metric invariants), 4 adversarial transaction-level fixtures (A, B, C, and Case D wrong relationships with resolved records), AI recall definitions, and audit correspondence invariants.
-* `tests/test_output_consistency.py`: Programmatic verification ensuring metrics, decisions, exceptions, and audit logs are 100% mutually consistent.
-* `tests/test_decision_accounting.py`: Invariant test proving `AI accepted == AI committed + AI superseded + AI validation failures + AI failed` with zero silent drops.
-* `tests/test_financial_value.py`: Proves canonical business transaction value de-duplication.
-* `tests/test_reproducibility.py`: Verifies byte-for-byte reproducibility across identical seeds for datasets, decisions, and metrics.
-* `tests/test_configuration.py`: Proves that modifying thresholds in configuration changes system behavior dynamically without modifying code.
-* `tests/test_normalization.py`: Validates legal suffix stripping, whitespace/punctuation cleanup, canonical alias mapping, and null safety.
-* `tests/test_full_pyramid.py`: 75-test test pyramid covering regressions, invariants, stopping conditions, and end-to-end execution.
+---
+
+# Technology Stack
+
+| Technology      | Purpose                    |
+| --------------- | -------------------------- |
+| Python          | Core implementation        |
+| Pydantic        | Data models and validation |
+| RapidFuzz       | Fuzzy matching             |
+| PyYAML          | Configuration              |
+| Python-dateutil | Date handling              |
+| Rich            | Terminal reporting         |
+| Streamlit       | Dashboard                  |
+| Pytest          | Automated testing          |
+| OpenAI / Gemini | Live AI verification       |
 
 ---
 
-##  System Limitations & Honest Scope
+# Limitations
 
-1. **Batch Scaling:** The current pipeline operates in-memory with sub-100ms execution on batches of hundreds of multi-source records (~2,700 rec/sec). High-volume enterprise environments processing tens of millions of records daily would distribute candidate generation and blocking across Apache Spark or distributed streaming queues (e.g. Kafka).
-2. **Wire Fee Tolerance Bounds:** Financial tolerances are bounded at $28.00 absolute and 5.0% relative in `configs/thresholds.yaml` to prevent fraud. Edge-case cross-border wires incurring exotic correspondent fees (> $28) are safely routed to the human exception queue for manual approval.
-3. **AI Provider Mode:** For 100% byte-for-byte offline reproducibility in buildathon evaluation, the benchmark runs with `MockLLMProvider`. Production live AI verification can be activated at any time by supplying a `GEMINI_API_KEY` or `OPENAI_API_KEY` in `.env` and configuring `provider: "live"` in `configs/thresholds.yaml`.
+The current pipeline processes records in memory.
+
+It is designed around the included buildathon-scale workload.
+
+For larger datasets, candidate generation could be distributed.
+
+Possible future infrastructure includes:
+
+```text
+Apache Spark
+Kafka
+Distributed processing
+Partitioned pipelines
+```
+
+Financial tolerances are intentionally conservative.
+
+Cases outside those limits are routed for human review.
+
+The benchmark uses a mock AI provider for reproducibility.
+
+Live AI mode depends on external API availability.
 
 ---
 
-##  Execution & Verification Commands
+# Final Design Principle
 
-### 1. Run Clean Evaluation & Generate Output Artifacts
-```bash
-python scripts/evaluate.py
-```
-Generated artifacts:
-* `outputs/reports/metrics.json`: Full 78-key reconciliation scorecard and discrepancy breakdown.
-* `outputs/reports/exceptions.json`: Actionable per-record exception queue with evidence and suggested actions.
-* `outputs/decisions/decisions.json`: Complete audit of all resolved and superseded decisions.
-* `outputs/audit/audit.json`: Complete append-only audit trail with timestamps and inputs.
+The project separates matching, reasoning, and financial control.
 
-### 2. Run Interactive Demo
-```bash
-python scripts/run_demo.py
+```text
+Normalize
+    ↓
+Generate Candidates
+    ↓
+Match Exactly
+    ↓
+Score Fuzzy Candidates
+    ↓
+Use AI Only for Ambiguity
+    ↓
+Resolve Collisions
+    ↓
+Validate Financially
+    ↓
+Resolve or Escalate
+    ↓
+Audit Everything
+    ↓
+Evaluate Independently
 ```
 
-### 3. Generate New Synthetic Dataset
-```bash
-python scripts/generate_data.py
-```
-Deterministic zero-padded IDs (`GT-0001`, `L-0001`, `B-0001`, `I-0001`, `B-0001-DUP1`).
+The goal is not to replace financial controls with AI.
+
+The goal is to use AI where it adds useful judgment.
+
+The final financial decision remains deterministic and auditable.
+
+> **AI proposes. Deterministic controls decide.**
