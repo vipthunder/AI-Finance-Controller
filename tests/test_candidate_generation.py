@@ -25,10 +25,10 @@ def test_candidate_generation_basic():
 def test_candidate_gen_skips_same_source():
     gen = CandidateGenerator()
     records = [
-        Record(id="L1", source=SourceType.LEDGER, date=dt.date(2024, 1, 1),
-               amount=1000.0, counterparty="ACME", currency="USD"),
-        Record(id="L2", source=SourceType.LEDGER, date=dt.date(2024, 1, 1),
-               amount=1000.0, counterparty="ACME", currency="USD"),
+       Record(id="L1", source=SourceType.LEDGER, date=dt.date(2024, 1, 1),
+       amount=1000.0, counterparty="ACME", currency="USD"),
+       Record(id="L2", source=SourceType.LEDGER, date=dt.date(2024, 1, 1),
+       amount=1000.0, counterparty="ACME", currency="USD"),
     ]
     candidates = gen.generate(records)
     assert len(candidates) == 0

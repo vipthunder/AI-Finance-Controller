@@ -38,9 +38,9 @@ def test_normalize_counterparty():
 def test_normalize_batch():
     norm = RecordNormalizer()
     ledger = [{"ledger_id": "L1", "posting_date": "2024-01-01", "amount": "100",
-               "currency": "USD", "vendor_account": "Acme"}]
+            "currency": "USD", "vendor_account": "Acme"}]
     bank = [{"transaction_id": "B1", "value_date": "01/01/2024", "settled_amount": "100",
-             "currency_code": "USD", "statement_narrative": "ACME INC"}]
+            "currency_code": "USD", "statement_narrative": "ACME INC"}]
     invoice = [{"internal_invoice_id": "I1", "invoice_date": "2024-01-01", "total_amount": "100",
                 "billing_currency": "USD", "supplier_name": "Acme Corp"}]
     records = norm.normalize_batch(ledger, bank, invoice)

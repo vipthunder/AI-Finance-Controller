@@ -78,8 +78,8 @@
   "duplicate_escape_rate": 0.0,
   "critical_error_rate": 0.0,
   "silent_drop_count": 0,
-  "processing_time_ms": 79.79941368103027,
-  "throughput_records_per_sec": 2243.124250454881,
+  "processing_time_ms": 200.7138729095459,
+  "throughput_records_per_sec": 891.8167807995438,
   "fn_diagnostics": {
     "FN_CANDIDATE_GENERATION": 0,
     "FN_LOW_SCORE": 0,

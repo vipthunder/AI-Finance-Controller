@@ -12,17 +12,17 @@ def test_validator_init():
 
 
 def _make_pair(amount_a=1000.0, amount_b=1000.0, date_a=dt.date(2024, 1, 1),
-               date_b=dt.date(2024, 1, 1), currency_a="USD", currency_b="USD",
-               source_a=SourceType.LEDGER, source_b=SourceType.BANK):
+    date_b=dt.date(2024, 1, 1), currency_a="USD", currency_b="USD",
+    source_a=SourceType.LEDGER, source_b=SourceType.BANK):
     r1 = Record(id="L1", source=source_a, date=date_a, amount=amount_a,
                 counterparty="ACME", currency=currency_a)
     r2 = Record(id="B1", source=source_b, date=date_b, amount=amount_b,
                 counterparty="ACME", currency=currency_b)
     fs = FeatureScores(name_similarity=1.0, amount_proximity=1.0, date_proximity=1.0,
-                       composite_score=1.0, amount_diff=abs(amount_a - amount_b),
-                       date_diff_days=abs((date_a - date_b).days))
+                    composite_score=1.0, amount_diff=abs(amount_a - amount_b),
+                    date_diff_days=abs((date_a - date_b).days))
     return CandidatePair(record_a=r1, record_b=r2, score=1.0, feature_scores=fs,
-                         matched_on=["all"], stage=MatchStage.EXACT)
+                matched_on=["all"], stage=MatchStage.EXACT)
 
 
 def test_valid_pair_passes():
